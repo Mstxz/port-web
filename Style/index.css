@@ -11,21 +11,20 @@ body {
 }
 
 /*header*/
-header {
+header, #headd {
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color: #222;
-    box-shadow: 0 10px 15px #111;
     z-index: 1000;
     position: sticky;
+    transition: ease 0.3s;
 }
 
 /*logo*/
-.logo {
+#logo {
     font-weight: 600;
     font-size: 30px;   
 }
@@ -33,7 +32,7 @@ header {
 
 /*navbar*/
 
-.navbar button {
+#navbar button {
     margin-left: 40px;
     text-decoration: none;
     color: white;
@@ -43,9 +42,14 @@ header {
     font-size: 17px;
 }
 
-.navbar button:hover{
+#navbar button:hover{
     text-shadow: 0 0 20px white;
     transition: linear 0.3s;
+}
+
+/*navbar scrolled*/
+#headd .scrolled {
+    padding: 5px 10%;
 }
 
 /*section*/
