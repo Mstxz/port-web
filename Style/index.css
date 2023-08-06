@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(49, 54, 58);
+    color: white;
+    min-height: 100vh;
+}
+/*header*/
+header {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    background-color: #222;
+    box-shadow: 0 10px 15px #111;
+    position: fixed;
+    z-index: 100;
+}
+
+/*logo*/
+.logo {
+    font-weight: 600;
+    font-size: 30px;   
+}
+
+
+/*navbar*/
+
+.navbar a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+    transition: linear 0.3s;
+}
+
+.navbar a:hover{
+    text-shadow: 0 0 20px white;
+    transition: linear 0.3s;
+}
+
+/*section*/
+section {
+    height: 1000px;
+}
