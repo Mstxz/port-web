@@ -73,7 +73,6 @@ section {
     z-index: -1;
     left: 30vw;
     border-radius: 190px 390px 150px 220px;
-    bottom: -15vh;
     position: absolute;
     transform: rotateZ(10deg);
 
