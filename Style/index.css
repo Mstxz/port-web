@@ -67,9 +67,9 @@ section {
     height: 500px;
     background-color: rgb(59, 87, 116);
     z-index: -1;
-    left: 25%;
+    left: 30vw;
     border-radius: 190px 390px 150px 220px;
-    bottom: -15%;
+    bottom: -15vh;
     position: absolute;
     transform: rotateZ(10deg);
 
@@ -87,12 +87,13 @@ section {
 }
 
 #about .social {
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 #about .hero button, #about .hero button a {
     font-size: 30px;
-    margin: 10px;
+    margin: 5px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
