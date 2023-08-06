@@ -16,11 +16,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 100px;
+    padding: 30px 10%;
     background-color: #222;
     box-shadow: 0 10px 15px #111;
-    position: fixed;
-    z-index: 100;
+    z-index: 1;
+    position: sticky;
 }
 
 /*logo*/
@@ -32,19 +32,25 @@ header {
 
 /*navbar*/
 
-.navbar a {
+.navbar button {
     margin-left: 40px;
     text-decoration: none;
     color: white;
     transition: linear 0.3s;
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
 }
 
-.navbar a:hover{
+.navbar button:hover{
     text-shadow: 0 0 20px white;
     transition: linear 0.3s;
 }
 
 /*section*/
 section {
-    height: 1000px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
