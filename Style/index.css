@@ -120,8 +120,16 @@ section {
     font-size: 23.5px;
 }
 
+#skills {
+    display: flex;
+}
+
+#skills .exp{
+    width: 80%;
+}
+
 #skills .exp .programsexp{
-    width: 40%;
+
     background-color: rgba(135, 163, 189, 0.8);
 }
 

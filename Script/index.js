@@ -1,4 +1,4 @@
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+/*Shrink Navbar Function*/
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -12,3 +12,15 @@ function scrollFunction() {
     document.getElementById("headd").style.boxShadow = "none";
   }
 }
+
+/*Content Hover*/
+const hoverContainer = document.querySelector('.hover-container');
+const hoverContent = document.querySelector('.hover-content');
+
+hoverContainer.addEventListener('mouseenter', () => {
+    hoverContent.style.display = 'block';
+});
+
+hoverContainer.addEventListener('mouseleave', () => {
+    hoverContent.style.display = 'none';
+});
