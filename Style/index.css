@@ -120,28 +120,19 @@ section {
     font-size: 23.5px;
 }
 
-#skills {
-    display: flex;
+/*section2 - skills*/
+
+#skills b{
+    text-align: center;
 }
 
-#skills .exp{
-    width: 80%;
-}
-
-#skills .exp .programsexp{
-
-    background-color: rgba(135, 163, 189, 0.8);
-}
-
-#skills .exp .programsexp img{
+#skills .programsexp img{
     width: 80px;
-    height: auto;
-    margin: 10px;
+    margin: 20px;
     transition: ease 0.3s;
 }
 
-#skills .exp .programsexp img:hover{
-    width: 90px;
-    height: auto;
+#skills img:hover{
+    transform: scale(1.2) translateY(-5px);
     transition: ease 0.3s;
 }

@@ -13,14 +13,4 @@ function scrollFunction() {
   }
 }
 
-/*Content Hover*/
-const hoverContainer = document.querySelector('.hover-container');
-const hoverContent = document.querySelector('.hover-content');
-
-hoverContainer.addEventListener('mouseenter', () => {
-    hoverContent.style.display = 'block';
-});
-
-hoverContainer.addEventListener('mouseleave', () => {
-    hoverContent.style.display = 'none';
-});
+;
