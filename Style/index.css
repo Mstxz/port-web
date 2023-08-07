@@ -122,10 +122,18 @@ section {
 
 #skills .exp .programsexp{
     width: 40%;
+    background-color: rgba(135, 163, 189, 0.8);
 }
 
 #skills .exp .programsexp img{
     width: 80px;
     height: auto;
     margin: 10px;
+    transition: ease 0.3s;
+}
+
+#skills .exp .programsexp img:hover{
+    width: 90px;
+    height: auto;
+    transition: ease 0.3s;
 }
