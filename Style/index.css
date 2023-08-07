@@ -141,10 +141,39 @@ section {
     transition: ease 0.3s;
 }
 
-#skills img:hover{
+#skills .contnt img:hover{
     transform: scale(1.2) translateY(-5px);
     transition: ease 0.3s;
     filter: drop-shadow(0 0 10px #fff);
+}
+
+#skills .contnt {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease 0.3s;
+}
+
+#skills .contnt:hover{
+    text-shadow: 0 0 20px #fff;
+    transition: ease 0.3s;
+}
+
+#skills .contnt p{
+    margin: 10px;
+    font-weight: bold;
+}
+
+/*Section3 - work*/
+#work{
+    display: flex;
+    margin: 10%;
+    display: block;
+}
+
+#work .workname{
+    font-size: 50px;
+    font-weight: bold;
 }
 
 /*Scroll Bar*/
@@ -165,4 +194,19 @@ section {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #0a0a0a; 
+  }
+
+  /*footer*/
+  footer{ 
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer table{
+    margin: 10px 50px;
+  }
+
+  footer table td{
+    padding-left: 10px;
   }
