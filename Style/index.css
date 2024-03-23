@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -9,13 +8,14 @@ html {
 }
 
 body {
-    background-color: rgb(48, 44, 68);
-    color: white;
+    background-color: rgb(39, 35, 49);
     min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 /*header*/
-header, #headd {
+header {
     top: 0;
     left: 0;
     display: flex;
@@ -25,14 +25,16 @@ header, #headd {
     z-index: 1000;
     position: sticky;
     transition: ease 0.3s;
-}
+    font-family: "Protest Revolution", sans-serif;
 
+}
+ 
 /*logo*/
 #logo {
     font-weight: 600;
     font-size: 30px;   
+    color: white;
 }
-
 
 /*navbar*/
 
@@ -49,6 +51,12 @@ header, #headd {
 #navbar button:hover{
     text-shadow: 0 0 20px white;
     transition: linear 0.3s;
+}
+
+#navbar a:hover {
+    text-shadow: 0 0 20px mediumslateblue;
+    color: rgb(177, 125, 226);
+    transition: ease 0.3s;
 }
 
 /*navbar scrolled*/
