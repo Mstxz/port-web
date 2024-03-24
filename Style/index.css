@@ -8,27 +8,27 @@ html {
 }
 
 body {
-    background-image: url(StylingImg/BG.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(40, 40, 49);
+    background-image: linear-gradient(rgb(58, 58, 112), rgb(27, 26, 31));
     background-attachment: fixed;
     min-height: 100vh;
-    height: 3000px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
-#about {
-    background-color: blue;
+#home {
     font-family: "Poiret One", sans-serif;
     letter-spacing: 0.3rem;
-    width: 100vw;
     display: block;
+    text-align: center;
+    padding: 10em;
 }
 
-#about .name {
+#home .name {
     font-size: 5em;
     font-weight: bold;
-    left: 50%;
-    position: fixed;
+}
+
+#home .port {
+    font-size: 1.5em;
 }

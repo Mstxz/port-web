@@ -31,7 +31,7 @@ header {
 /*navbar*/
 
 #navbar a {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     text-decoration: none;
     color: white;
     transition: linear 0.3s;
@@ -49,6 +49,10 @@ header {
     text-shadow: 0 0 20px rgb(164, 153, 228);
     color: rgb(177, 125, 226);
     transition: ease 0.3s;
+}
+
+#navbar a:active {
+    background-color: rgb(164, 153, 228);
 }
 
 /*navbar scrolled*/
