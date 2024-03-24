@@ -14,10 +14,11 @@ body {
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    font-family: "Poiret One", sans-serif;
 }
 
+/*Home*/
 #home {
-    font-family: "Poiret One", sans-serif;
     letter-spacing: 0.3rem;
     display: block;
     text-align: center;
@@ -31,4 +32,42 @@ body {
 
 #home .port {
     font-size: 1.5em;
+}
+
+/*About*/
+#about {
+    padding: 2em;
+    margin-top: 100em;
+}
+
+/*Basic Info*/
+#about .basicinfo {
+    width: 40vw;
+}
+
+#about .basicinfo h1 {
+    font-size: 60px;
+    letter-spacing: 0.5rem;
+}
+
+#about .basicinfo table {
+    font-size: 25px;
+    margin: 2rem 0;
+}
+
+#about .basicinfo td, #about .basicinfo th {
+    padding:0 2rem;
+    text-align: left;
+}
+
+/*Media*/
+#about .media a {
+    color: midnightblue;
+    width: 100px;
+    height: 100px;
+    background-color: white;  
+    padding: 1rem; 
+    font-size: 20px;
+    margin: 0 10px;
+    border-radius: 50%;
 }
