@@ -8,164 +8,27 @@ html {
 }
 
 body {
-    background-color: rgb(39, 35, 49);
+    background-image: url(StylingImg/BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
+    height: 3000px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
-
-/*section*/
-section {
-    display: flex;
-    height: 100vh;
-    width: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-/*section1 - About*/
-#about{
-    justify-content: center;
-    top: 0;
-    z-index: 0;
-}
-
-#about .BGCube {
-    width: 500px;
-    height: 500px;
-    background-color: rgb(59, 87, 116);
-    z-index: -1;
-    left: 30vw;
-    border-radius: 190px 390px 150px 220px;
-    position: absolute;
-    transform: rotateZ(10deg);
-
-}
-
-#about .hero{
-    width: 50vh;
-    font-size: 20px;
-    z-index: 1;
-    margin: 0 3%;
-}
-
-#about .hero .name {
-    font-size: 70px;
-    font-weight: 600;
-}
-
-#about .social {
-    margin-left: 20px;
-    margin-top: 30px;
-}
-
-#about .hero button, #about .hero button a {
-    font-size: 30px;
-    margin: 5px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    color: black;
-    transition: ease 0.3s;
-}
-
-#about .hero button:hover {
-    background-color: aquamarine;
-    box-shadow: 0 0 20px aqua;
-    transition: ease 0.3s;
-}
-
-#about table {
-    margin: 10px;
-}
-
-#about table td {
-    padding: 10px 5px;
-    font-size: 20px;
-}
-
-/*section2 - skills*/
-#skills{
-    flex-direction: column;
-}
-#skills b{
-    text-align: center;
-}
-
-#skills .programsexp img{
-    width: 80px;
-    margin: 20px;
-    transition: ease 0.3s;
-}
-
-#skills .contnt img:hover{
-    transform: scale(1.2) translateY(-5px);
-    transition: ease 0.3s;
-    filter: drop-shadow(0 0 10px #fff);
-}
-
-#skills .contnt {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    transition: ease 0.3s;
-}
-
-#skills .contnt:hover{
-    text-shadow: 0 0 20px #fff;
-    transition: ease 0.3s;
-}
-
-#skills .contnt p{
-    margin: 10px;
-    font-weight: bold;
-}
-
-/*Section3 - work*/
-#work{
-    display: flex;
-    margin: 10%;
+#about {
+    background-color: blue;
+    font-family: "Poiret One", sans-serif;
+    letter-spacing: 0.3rem;
+    width: 100vw;
     display: block;
 }
 
-#work .workname{
-    font-size: 50px;
+#about .name {
+    font-size: 5em;
     font-weight: bold;
+    left: 50%;
+    position: fixed;
 }
-
-/*Scroll Bar*/
-::-webkit-scrollbar {
-    width: 20px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #242020; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #0a0a0a; 
-  }
-
-  /*footer*/
-  footer{ 
-    padding: 10px 5%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  footer table{
-    margin: 10px 50px;
-  }
-
-  footer table td{
-    padding-left: 10px;
-  }
