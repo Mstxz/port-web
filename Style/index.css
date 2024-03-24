@@ -14,64 +14,6 @@ body {
     color: white;
 }
 
-/*header*/
-header {
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    z-index: 1000;
-    position: sticky;
-    transition: ease 0.3s;
-    font-family: "Protest Revolution", sans-serif;
-
-}
- 
-/*logo*/
-#logo {
-    font-weight: 600;
-    font-size: 40px;   
-    color: white;
-    transition: ease 0.3s;
-    text-align: center;
-}
-
-#logo:hover {
-    transform: skew(-25deg);
-    transition: ease 0.3s;
-    color: lavender;
-    letter-spacing: 5px;
-}
-
-/*navbar*/
-
-#navbar a {
-    margin-left: 2rem;
-    text-decoration: none;
-    color: white;
-    transition: linear 0.3s;
-    background-color: transparent;
-    border: none;
-    font-size: 17px;
-}
-
-#navbar button:hover{
-    text-shadow: 0 0 20px white;
-    transition: linear 0.3s;
-}
-
-#navbar a:hover {
-    text-shadow: 0 0 20px rgb(164, 153, 228);
-    color: rgb(177, 125, 226);
-    transition: ease 0.3s;
-}
-
-/*navbar scrolled*/
-#headd .scrolled {
-    padding: 5px 10%;
-}
 
 /*section*/
 section {
