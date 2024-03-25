@@ -18,37 +18,46 @@ body {
 }
 
 section {
-    height: 1000px;
+    padding-top: 20vh;
+    height: 500px;
+    z-index: 1;
 }
-
 /*Home*/
-#home {
+.home {
     letter-spacing: 0.3rem;
     display: block;
     text-align: center;
     padding: 10em;
+    z-index: 0;
+    height: 500px;
 }
 
-#home .name {
+.home .name {
     font-size: 5em;
     font-weight: bold;
 }
 
-#home .port {
+.home .port {
     font-size: 1.5em;
 }
 
 /*About*/
 #about {
     padding: 2em;
-    margin-top: 100em;
     display: flex;
     justify-content: space-between;
+    padding-top: 18vh;
+    background-color: rgb(92, 91, 128);
+    box-shadow: 0 0 100px black;
+    z-index: 5;
 }
 
 /*Basic Info*/
 #about .basicinfo {
     width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #about .basicinfo h1 {
@@ -62,19 +71,19 @@ section {
 }
 
 #about .basicinfo td, #about .basicinfo th {
-    padding:0 2rem;
+    padding:0 2rem 0 1rem;
     text-align: left;
 }
 
 /*Media*/
 
 #about .media a {
-    color: midnightblue;
+    color: white;
     width: 100px;
     height: 100px;
-    background-color: white;  
     padding: 1rem; 
     font-size: 20px;
     margin: 0 10px;
     border-radius: 50%;
+
 }

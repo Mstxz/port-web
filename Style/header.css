@@ -5,11 +5,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
     z-index: 1000;
     position: sticky;
     transition: ease 0.3s;
     font-family: "Protest Revolution", sans-serif;
+    padding: 0 10vw;
+    height: 18vh;
 }
  
 /*logo*/
@@ -29,7 +30,6 @@ header {
 }
 
 /*navbar*/
-
 #navbar a {
     margin-left: 2.5rem;
     text-decoration: none;
