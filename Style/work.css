@@ -1,0 +1,32 @@
+.worknavbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.worknavbar a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    margin: 0 1rem;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, rgba(0,0,40,0.5) 70%, black), url('StylingImg/BG.png');
+    background-position: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.worknavbar a h1 {
+    font-size: 150%;
+}
+
+.hide{
+    display: none;
+}
+
+.worknavbar a:hover + .hide {
+    display: flex;
+}

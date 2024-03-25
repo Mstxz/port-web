@@ -8,7 +8,6 @@ header {
     z-index: 1000;
     position: sticky;
     transition: ease 0.3s;
-    font-family: "Protest Revolution", sans-serif;
     padding: 0 10vw;
     height: 18vh;
 }
@@ -31,31 +30,26 @@ header {
 
 /*navbar*/
 #navbar a {
-    margin-left: 2.5rem;
+    margin-left: 1rem;
     text-decoration: none;
     color: white;
     transition: linear 0.3s;
     background-color: transparent;
     border: none;
     font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 7px 15px;
+    border-radius: 30px;
 }
 
-#navbar button:hover{
-    text-shadow: 0 0 20px white;
-    transition: linear 0.3s;
-}
-
-#navbar a:hover {
-    text-shadow: 0 0 20px rgb(164, 153, 228);
-    color: rgb(177, 125, 226);
+#navbar a:hover:not(.active) {
+    text-shadow: 0 0 20px rgb(99, 117, 201);
+    color: rgb(180, 194, 231);
     transition: ease 0.3s;
 }
 
-#navbar a:active {
-    background-color: rgb(164, 153, 228);
-}
-
-/*navbar scrolled*/
-#headd .scrolled {
-    padding: 5px 10%;
+#navbar .active {
+    background-color: rgb(180, 194, 231);
+    color: midnightblue;
 }

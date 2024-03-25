@@ -17,8 +17,11 @@ body {
     font-family: "Poiret One", sans-serif;
 }
 
+.content {
+    animation: EnterTransition 0.5s ease;
+}
+
 section {
-    padding-top: 20vh;
     height: calc(100vh - 30vh);
     z-index: 1;
 }
@@ -29,4 +32,10 @@ section {
     opacity: 0.1;
     bottom: calc(50% - 500px);
     left: calc(50% - 500px);
+}
+
+/*anims*/
+@keyframes EnterTransition {
+    from{transform: translateY(-10px); opacity: 0;}
+    to{transform: translateY(0px); opacity: 1;}
 }
