@@ -1,0 +1,85 @@
+#about {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+/*Basic Info*/
+#about .basicinfo {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about .basicinfo h1 {
+    font-size: 60px;
+    letter-spacing: 0.5rem;
+}
+
+#about .basicinfo table {
+    font-size: 25px;
+    margin: 2rem 0;
+}
+
+#about .basicinfo td, #about .basicinfo th {
+    padding:0 2rem 0 1rem;
+    text-align: left;
+}
+
+/*Media*/
+#about .media a {
+    color: white;
+    width: 100px;
+    height: 100px;
+    padding: 1rem; 
+    font-size: 20px;
+    margin: 0 10px;
+    transition: ease 0.3s;
+}
+
+#about .media a:hover {
+    border-bottom: 5px solid white;
+    transition: ease 0.3s;
+}
+
+/*Experience*/
+#about .exp {
+    background-color: white;
+    color: midnightblue;
+    border-radius: 20px;
+    width: 30%;
+    padding: 1em;
+}
+
+#about .exp h1 {
+    font-size: 50px;
+    font-weight: 600;
+} 
+
+#about .exp hr {
+    width: 30%;
+    border: 3px solid;
+    margin-top: 5px;
+}
+
+#about .exp .expicon {
+    margin: 3%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+}
+
+#about .exp .expicon img {
+    width: 60px;
+    height: auto;
+    margin: 10px;
+    transition: ease 0.3s;
+}
+
+#about .exp .expicon img:hover {
+    transform: scale(1.2);
+    transition: ease 0.3s;
+}
+
