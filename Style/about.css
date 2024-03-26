@@ -76,10 +76,18 @@
     height: auto;
     margin: 10px;
     transition: ease 0.3s;
+    filter: drop-shadow(5px 5px 10px rgba(10,10,20,0.7));
 }
 
 #about .exp .expicon img:hover {
-    transform: scale(1.2);
     transition: ease 0.3s;
+    animation: HoverMove 1s infinite ease;
+}
+
+/*Animation*/
+@keyframes HoverMove {
+    0% {transform: translateY(0px);} 
+    50% {transform: translateY(-10px);}   
+    100% {transform: translateY(0px);} 
 }
 

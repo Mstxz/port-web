@@ -10,30 +10,30 @@
     margin: 0 1rem;
     width: 100%;
     border: 1px solid white;
-    border-radius: 30px;
+    border-radius: 20px;
     background-image: linear-gradient(to bottom, rgba(0,0,40,0.5) 70%, black), url('StylingImg/BG.png');
     background-position: 50%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: end;
-
+    transition: ease 0.5s;
 }
 
 .worknavbar a h1 {
     font-size: 150%;
-}
-
-.hide{
-    display: none;
+    width: 60%;
+    transition: ease 0.5s;
 }
 
 .worknavbar a:hover {
-    justify-content: space-between;
-    transition: ease 0.3s;
-    background-image: linear-gradient(to bottom, rgba(0,0,40,0.5) 60%, #777), url('StylingImg/BG.png');
+    width: 300%;
+    transition: ease 0.5s;
+    background-image: linear-gradient(rgba(0,0,40,0.5) 50%, #444), url('StylingImg/BG.png');
 }
 
-.worknavbar a:hover .hide {
-    display: block;
+.worknavbar a:hover h1 {
+    font-size: 300%;
+    transition: ease 0.5s;
 }
+
