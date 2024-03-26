@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+
 }
 
 .worknavbar a h1 {
@@ -27,6 +28,12 @@
     display: none;
 }
 
-.worknavbar a:hover + .hide {
-    display: flex;
+.worknavbar a:hover {
+    justify-content: space-between;
+    transition: ease 0.3s;
+    background-image: linear-gradient(to bottom, rgba(0,0,40,0.5) 60%, #777), url('StylingImg/BG.png');
+}
+
+.worknavbar a:hover .hide {
+    display: block;
 }
