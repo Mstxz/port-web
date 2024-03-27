@@ -1,0 +1,58 @@
+/*Mestixz Project*/
+.mestixz {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.9) 30%, transparent) ,url("StylingImg/Mestixz_MAP.jpg");
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 5vw;
+}
+
+.mestixz h1 {
+    font-size: 80px;
+    font-weight: 100;
+}
+
+/*Mestixz Project Navigation*/
+.mestixz nav a {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 20%;
+    text-align: center;
+}
+
+.mestixz nav a i {
+    margin-left: 30px;
+    transform: rotateZ(-45deg);
+    transition: ease 0.5s;
+}
+
+.mestixz nav a:hover {
+    background-color: tomato;
+    border: 1px solid tomato;
+    transition: ease 0.3s;
+}
+
+.mestixz nav a:hover i {
+    transform: rotateZ(0deg);
+    transition: ease 0.5s;
+}
+
+/*Mestixz Project Media*/
+
+.mestixz .media a {
+    color: white;
+    font-size: 30px;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+.mestixz .media a:hover {
+    text-shadow: 0 0 20px white;
+}
