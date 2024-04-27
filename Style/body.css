@@ -9,7 +9,7 @@ html {
 
 body {
     background-color: rgb(40, 40, 49);
-    background-image: linear-gradient(rgb(58, 58, 112), rgb(27, 26, 31));
+    background-image: linear-gradient(rgb(99, 58, 112), rgb(27, 26, 31));
     background-attachment: fixed;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;

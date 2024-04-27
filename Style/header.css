@@ -44,12 +44,12 @@ header {
 }
 
 #navbar a:hover:not(.active) {
-    text-shadow: 0 0 20px rgb(99, 117, 201);
-    color: rgb(180, 194, 231);
+    text-shadow: 0 0 20px rgb(177, 99, 201);
+    color: rgb(215, 180, 231);
     transition: ease 0.3s;
 }
 
 #navbar .active {
-    background-color: rgb(180, 194, 231);
-    color: midnightblue;
+    background-color: rgb(219, 180, 231);
+    color: rgb(92, 25, 112);
 }

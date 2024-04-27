@@ -1,4 +1,8 @@
 /*Home*/
+* {
+    box-sizing: border-box;
+}
+
 .home {
     letter-spacing: 0.3rem;
     display: block;

@@ -77,12 +77,12 @@
     height: auto;
     margin: 10px;
     transition: ease 0.3s;
-    filter: drop-shadow(5px 5px 10px rgba(10,10,20,0.7));
 }
 
 #about .exp .expicon img:hover {
     transition: ease 0.3s;
     animation: HoverMove 1s infinite ease;
+    filter: drop-shadow(5px 5px 10px rgba(10,10,20,0.7));
 }
 
 /*Animation*/
