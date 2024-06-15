@@ -10,6 +10,7 @@ header {
     transition: ease 0.3s;
     padding: 0 10vw;
     height: 18vh;
+    user-select: none;
 }
  
 /*logo*/
