@@ -17,7 +17,7 @@ body {
     font-family: "Poiret One", sans-serif;
 }
 
-.content {
+section {
     animation: EnterTransition 0.5s ease;
 }
 
