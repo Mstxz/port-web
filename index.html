@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/index.css">
     <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/header_responsive.css">
     <link rel="stylesheet" href="Style/body.css">
     <link rel="icon" href="image/Logo_ROUNDED.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +23,11 @@
 <body>
     <header id="headd">
         <div id="logo">Mstxz</div>
-        <nav id="navbar">
+        <nav id="navbar" onclick="ToggleNavbar()">
             <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>                   
-            <a href="work.html">Work</a>                          
-            <a href="#">Contact</a>                                                 
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
     <div class="content">
@@ -35,5 +36,6 @@
             <div class="port">Portfolio</div>
         </div>
     </div>
+    <script src="Script/header.js"></script>
 </body>
 </html>

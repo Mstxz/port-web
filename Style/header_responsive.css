@@ -1,0 +1,58 @@
+@media screen and (max-width: 1080px) {
+    /*header*/
+    header {
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        position: sticky;
+        transition: ease 0.3s;
+        padding: 0 10vw;
+        height: 10vh;
+        user-select: none;
+    }
+    
+    /*logo*/
+    #logo {
+        font-weight: 600;
+        font-size: 40px;   
+        color: white;
+        transition: ease 0.3s;
+        text-align: center;
+    }
+    
+    #logo:hover {
+        transform: skew(-25deg);
+        transition: ease 0.3s;
+        color: lavender;
+        letter-spacing: 5px;
+    }
+    
+    /*navbar*/
+    #navbar a {
+        margin-left: 1rem;
+        text-decoration: none;
+        color: white;
+        transition: linear 0.3s;
+        background-color: transparent;
+        border: none;
+        font-size: 17px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 7px 15px;
+        border-radius: 30px;
+    }
+    
+    #navbar a:hover:not(.active) {
+        text-shadow: 0 0 20px rgb(177, 99, 201);
+        color: rgb(215, 180, 231);
+        transition: ease 0.3s;
+    }
+    
+    #navbar .active {
+        background-color: rgb(219, 180, 231);
+        color: rgb(92, 25, 112);
+    }
+}
