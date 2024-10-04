@@ -13,7 +13,6 @@
     height: calc(100vh - 18vh);
     padding: 10em;
     z-index: 0;
-    user-select: none;
 }
 
 .home .name {
