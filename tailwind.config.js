@@ -3,8 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {},
-    color: {
-      primary: '#694082',
+    fontFamily: {
+      'main': ['Poiret One', 'sans-serif'],
     }
   },
   plugins: [],
