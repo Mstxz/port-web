@@ -2,37 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--Links-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
-    <link rel="icon" href="image/Logo_ROUNDED.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Protest+Revolution&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-    <!--Title-->
-    <title>Mstxz's Portfolio Website</title>
-    <!--Script-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="output.css">
+    <title>Mstxz</title>
 </head>
-<body class="w-screen h-screen select-none bg-gradient-to-b from-main-purple to-slate-900">
-    <header id="headd" class="p-10 flex justify-around items-center fixed text-slate-200 w-screen">
-        <div id="logo" class="flex items-center text-3xl">Mstxz</div>
-        <nav id="navbar" onclick="ToggleNavbar()" class="flex gap-4">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="work.html">Work</a>
+<body class="select-none h-screen w-screen bg-gradient-to-b from-[#4f3970] to-slate-800">
+
+    <!--Header-->
+    <header class="text-slate-100 flex justify-around items-center py-10 fixed text-[1.05rem] w-screen bg-gradient-to-b from-slate-800">
+        <h1 class="font-semibold text-3xl">Mstxz</h1>
+        <nav class="flex gap-5 items-center">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Works</a>
             <a href="#">Contact</a>
         </nav>
     </header>
-    <section class="h-screen">
-        <div class="home">
-            <div class="name">Mstxz.EXE</div>
-            <div class="port">Portfolio</div>
-        </div>
-    </section>
-    <script src="Script/header.js"></script>
+
+    <!--Main-->
+    <main>
+
+        <!--Hero-->
+        <section class="flex flex-col w-screen h-screen justify-center items-center text-slate-100">
+            <h1 class="text-[60px]">Mstxz</h1>
+            <h4>Portfolio</h4>
+            <div class="flex gap-7 py-10 text-2xl">
+                <a target="_blank" href="https://www.instagram.com/mstxz.blend/" class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-[#725997] hover:-translate-y-3 hover:shadow-lg hover:shadow-slate-900"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.youtube.com/@Mstxz-exe" class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-[#725997] hover:-translate-y-3 hover:shadow-lg hover:shadow-slate-900"><i class="fa-brands fa-youtube"></i></a>
+                <a target="_blank" href="https://soundcloud.com/mstxz-exe" class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-[#725997] hover:-translate-y-3 hover:shadow-lg hover:shadow-slate-900"><i class="fa-brands fa-soundcloud"></i></a>
+                <a target="_blank" href="https://github.com/Mstxz" class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-[#725997] hover:-translate-y-3 hover:shadow-lg hover:shadow-slate-900"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/mewadee-seeda-1bb16830b/" class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-[#725997] hover:-translate-y-3 hover:shadow-lg hover:shadow-slate-900"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </section>
+
+    </main>
+
 </body>
 </html>

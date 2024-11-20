@@ -1,13 +1,17 @@
 {
   "name": "port-web",
   "version": "1.0.0",
+  "description": "Mstxz's Portfolio Web",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "port-web"
+  },
+  "author": "Mstxz",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "tailwindcss": "^3.4.15"
   }
