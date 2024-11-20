@@ -1,0 +1,16 @@
+.return-button {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+    padding: 30px;
+    margin-left: 50px;
+    transition: all 0.3s;
+    position: fixed;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.return-button:hover {
+    text-shadow: 0 0 30px aliceblue;
+}
