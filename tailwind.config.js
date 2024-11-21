@@ -7,5 +7,6 @@ module.exports = {
       'main': ['Poiret One', 'sans-serif'],
     }
   },
+  
   plugins: [],
 }
