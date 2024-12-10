@@ -1,0 +1,12 @@
+#loader-progress {
+    animation: progressbar 3s ease;
+}
+
+@keyframes progressbar {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 500px;
+    }
+}

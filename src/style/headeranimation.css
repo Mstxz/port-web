@@ -1,0 +1,12 @@
+header * {
+    animation: headeranim 500ms ease;
+}
+
+@keyframes headeranim {
+    from {
+        transform: rotateX(60deg) translateY(20px);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}

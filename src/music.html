@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="select-none scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <!--Links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Imports-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Dosis:wght@200..800&family=Oswald:wght@200..700&family=Poiret+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!--Titiles and Icons-->
+    <title>Mstxz</title>
+    <link rel="icon" href="image/Logo_white.png">
+
+    <!--Custom Styling, For Parallax-->
+    <link rel="stylesheet" href="style/parallax.css">
+    <link rel="stylesheet" href="style/particle.css">
+    <link rel="stylesheet" href="style/loader.css">
+</head>
+
+<body onload="loaderFunction()" class="h-screen font-main bg-gradient-to-b from-[#4f3970] to-slate-800 bg-fixed">
+    <!--Loader-->
+    <div id="loader" class="text-slate-100 flex flex-col justify-center items-center h-screen">
+        <h1 class="text-[100px]">Mstxz</h1>
+        <div class="w-[500px] h-3 bg-slate-800 fixed top-[calc(50%+60px)]"></div>
+        <div id="loader-progress" class="w-[500px] h-3 bg-slate-100 fixed top-[calc(50%+60px)] shadow-xl shadow-white"></div>
+        <h6 class="fixed top-[calc(50%+100px)]">Loading...</h6>
+    </div>
+
+    <div id="content" class="hidden">
+        <!--Particle-->
+    <div class="area fixed w-screen h-screen" >
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div >
+    <!--Header-->
+    <header class="text-slate-100 flex justify-around items-center py-10 fixed text-[1.05rem] w-screen bg-gradient-to-b from-slate-800 z-50">
+        <h1 class="font-semibold text-3xl">Mstxz</h1>
+        <nav class="flex gap-5 items-center [&>a]:px-5 [&>a]:py-2 [&>a]:rounded-full [&>a]:font-semibold [&>a]:transition-all">
+            <a href="index.html" class="hover:bg-slate-100 hover:text-[#272554]">Home</a>
+            <a href="#about" class="hover:bg-slate-100 hover:text-[#272554]">About</a>
+            <a href="#work" class="hover:bg-slate-100 hover:text-[#272554]">Works</a>
+        </nav>
+
+    </header>
+
+    <main class="text-slate-100">
+        <section class="flex justify-center items-center w-full h-screen flex-col p-20">
+            <h1 class="text-[100px]">Music Production</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eaque velit expedita, asperiores quam vero, sequi consequatur aspernatur sunt dolore distinctio. Nobis ad eius quod doloremque. Aliquam eligendi maiores incidunt.</p>
+        </section>
+    </main>
+    </div>
+
+    <!--Script-->
+    <script src="script/loader.js"></script>
+</body>
