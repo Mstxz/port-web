@@ -8,12 +8,13 @@
 }
 
 .circles li{
+  z-index: -1;
   position: absolute;
   display: block;
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   animation: animate 25s linear infinite;
   bottom: -150px;
   
@@ -102,13 +103,11 @@
   0%{
       transform: translateY(0) rotate(0deg);
       opacity: 1;
-      border-radius: 0;
   }
 
   100%{
       transform: translateY(-1000px) rotate(720deg);
       opacity: 0;
-      border-radius: 50%;
   }
 
 }
