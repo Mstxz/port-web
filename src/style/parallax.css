@@ -30,3 +30,18 @@ section *{
         transform: translateY(0);
     }
 }
+
+#menu {
+    animation: menutransition 0.5s ease;
+}
+
+@keyframes menutransition {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
