@@ -562,10 +562,6 @@ video {
   position: absolute;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .bottom-16 {
   bottom: 4rem;
 }
@@ -631,10 +627,6 @@ video {
   display: none;
 }
 
-.h-1\/2 {
-  height: 50%;
-}
-
 .h-2 {
   height: 0.5rem;
 }
@@ -643,12 +635,12 @@ video {
   height: 0.75rem;
 }
 
-.h-\[100px\] {
-  height: 100px;
-}
-
 .h-\[300px\] {
   height: 300px;
+}
+
+.h-\[60\%\] {
+  height: 60%;
 }
 
 .h-\[65px\] {
@@ -665,10 +657,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[60\%\] {
-  height: 60%;
 }
 
 .w-\[25\%\] {
@@ -705,22 +693,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[10\%\] {
-  width: 10%;
-}
-
-.w-\[5\%\] {
-  width: 5%;
 }
 
 .select-none {
@@ -884,11 +856,6 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .text-left {
@@ -1066,10 +1033,6 @@ video {
 
 .\[\&\>img\]\:w-\[50px\]>img {
   width: 50px;
-}
-
-.\[\&\>th\]\:w-1\/4>th {
-  width: 25%;
 }
 
 .\[\&\>th\]\:font-extrabold>th {
