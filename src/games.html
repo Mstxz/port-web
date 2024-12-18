@@ -60,6 +60,7 @@
             <button onclick="closeMenu()" class="fixed top-5 right-5 text-4xl"><i class="fa fa-xmark"></i></button>
             <div class="flex flex-col gap-4 justify-center h-full">
                 <ul>
+                    
                     <li class="px-10 py-2 hover:translate-x-4 transition-all"><a class="flex gap-3 items-center text-xl" href="index.html"><i class="fa fa-home"></i>Home</a></li>
                     <li class="px-10 py-2 hover:translate-x-4 transition-all"><a class="flex gap-3 items-center text-xl" href="#about"><i class="fa fa-user"></i>About</a></li>
                     <li class="px-10 py-2 hover:translate-x-4 transition-all"><a class="flex gap-3 items-center text-xl" href="#work"><i class="fa fa-briefcase"></i>Works</a></li>
@@ -77,7 +78,33 @@
         </div>
     
         <!--Main-->
-        <main class=" text-slate-100">
+        <main class=" text-slate-100 [&>section]:h-screen">
+            <section class="flex flex-col justify-center items-center">
+                <h1 class="text-[100px]">Game Development</h1>
+                <p>This is the showcase of Game Development Project (Included finished one and working one)</p>
+
+                <a href="#game-list" class="p-5 rounded-full absolute bottom-16"><i class="fa fa-chevron-down text-4xl"></i></a>
+            </section>
+
+            <section id="game-list" class="flex flex-row items-center justify-evenly">
+                <div class="w-[500px] h-[400px] bg-[url('https://img.itch.zone/aW1hZ2UvMjM1MDMyOS8xMzkyMjQ1NC5wbmc=/347x500/%2BS%2BqkM.png')] bg-center bg-cover">
+                    <div class="fixed bottom-0 right-0 w-full h-[150px] bg-gradient-to-b from-slate-700 to-slate-800"></div>
+                    <h1 class="fixed bottom-24 left-4 text-4xl font-bold">Instinct</h1>
+                    <i class="fa-brands fa-unity fixed bottom-4 left-4 text-4xl bg-slate-900 w-[50px] h-[50px] flex items-center justify-center rounded-md"></i>
+                    <a target="_blank" href="https://lost-penguin.itch.io/instinct" class="fixed bottom-4 right-4 bg-slate-50 text-main-purple-700 text-bold px-5 py-2 rounded-full">Download Now</a>
+                </div>
+                <div class="w-[500px] h-[400px] bg-[url('image/srcImg/AbyssWalker.png')] bg-center bg-cover">
+                    <div class="fixed bottom-0 right-0 w-full h-[150px] bg-gradient-to-b from-slate-700 to-slate-800"></div>
+                    <h1 class="fixed bottom-24 left-4 text-4xl font-bold">AbyssWalker</h1>
+                    <img src="https://godotengine.org/assets/press/icon_monochrome_dark.png" class="fixed bottom-4 left-4 text-2xl bg-slate-900 w-[50px] h-[50px] flex items-center justify-center rounded-md">
+                    <a target="_blank" href="https://github.com/Mstxz/Elven-Abyss-Game" class="fixed bottom-4 right-4 bg-slate-50 text-main-purple-700 text-bold px-5 py-2 rounded-full">Download Now</a>
+                </div>
+                <div class="w-[500px] h-[400px] bg-[url('image/StylingImg/BG.png')] bg-center bg-cover">
+                    <div class="fixed bottom-0 right-0 w-full h-[150px] bg-gradient-to-b from-slate-700 to-slate-800"></div>
+                    <h1 class="fixed bottom-24 left-4 text-4xl font-bold">Project Mestixz: Moonfall</h1>
+                    <p class="fixed bottom-4 right-4 text-slate-600 font-bold">Coming Very Soon...</p>
+                </div>
+            </section>
         </main>
 
         <script src="script/loader.js"></script>
