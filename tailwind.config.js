@@ -17,12 +17,22 @@ module.exports = {
           900: '#2F2242',  // Matches 'dark'
           950: '#211631',  // Very dark
         },
+      },
+      keyframes : {
+        headeranim : {
+          '0%' : { transform: 'rotateX(60deg) translateY(20px)' },
+          '100%' : { transform: 'rotateX(0deg)' },
+        }
+      },
+      animation : {
+        headeranimation : 'headeranim 0.5s ease',
       }
     },
-    fontFamily: {
-      'main': ['Poiret One', 'sans-serif'],
-    }
+      fontFamily: {
+        'main': ['Poiret One', 'sans-serif'],
+        'header' : ['"Eras ITC"', 'sans-serif'],
+      }
   },
-  
+
   plugins: [],
 }

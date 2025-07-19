@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Eras ITC';
+  src: url('/fonts/eras/ErasITC.woff2') format('woff2'),
+       url('/fonts/eras/ErasITC.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

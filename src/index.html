@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="style/indexanimation.css">
     <link rel="stylesheet" href="style/particle.css">
     <link rel="stylesheet" href="style/loader.css">
-    <link rel="stylesheet" href="style/headeranimation.css">
+
 
 </head>
 <body onload="loaderFunction()" class="h-screen font-main bg-gradient-to-b from-main-purple-700 to-slate-800 bg-fixed">
@@ -53,8 +53,8 @@
         </div >
         <!--Header-->
         <header class="text-slate-100 flex justify-around items-center py-10 fixed text-[1.05rem] w-screen bg-gradient-to-b from-slate-800 z-10">
-            <h1 class="font-semibold text-3xl">Mstxz</h1>
-            <button onclick="openMenu()"><i class="fa fa-bars text-3xl"></i></button>
+            <h1 class="font-semibold font-header text-3xl animate-headeranimation">Mstxz</h1>
+            <button onclick="openMenu()" class="animate-headeranimation"><i class="fa fa-bars text-3xl"></i></button>
         </header>
 
         <div id="menu" class="justify-evenly fixed right-0 w-[25%] z-20 bg-slate-800 bg-opacity-60 h-screen text-slate-50 hidden max-[968px]:w-full">
@@ -77,25 +77,30 @@
                 </ul>
             </div>
         </div>
-    
+
         <!--Main-->
         <main class=" text-slate-100">
             <!--Hero-->
             <section id="home" class="flex flex-col h-screen justify-center items-center">
-                <h1 class="text-[100px] tracking-wider" style="text-shadow: 0 0 30px aliceblue;">Mstxz</h1>
+                <h1 class="text-[100px] tracking-wider font-header" style="text-shadow: 0 0 30px aliceblue;">Mstxz</h1>
                 <h4 class="text-[20px]">Welcome to <span class="font-bold">Mstxz's</span> official Showcase</h4>
                 <div class="flex gap-7 py-10 text-2xl">
-                    <a target="_blank" href="https://www.instagram.com/mstxz.blend/" class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-main-purple-500 hover:shadow-lg hover:shadow-slate-900 hover:animation-paused"><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" id="igbutton" onclick="openInstagramMenu()"  class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-main-purple-500 hover:shadow-lg hover:shadow-slate-900 hover:animation-paused"><i class="fa-brands fa-instagram"></i></a>
                     <a target="_blank" href="https://www.youtube.com/@Mstxz-exe" class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-main-purple-500 hover:shadow-lg hover:shadow-slate-900 hover:animation-paused"><i class="fa-brands fa-youtube"></i></a>
                     <a target="_blank" href="https://soundcloud.com/mstxz-exe" class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-main-purple-500 hover:shadow-lg hover:shadow-slate-900 hover:animation-paused"><i class="fa-brands fa-soundcloud"></i></a>
                     <a target="_blank" href="https://github.com/Mstxz" class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-main-purple-500 hover:shadow-lg hover:shadow-slate-900 hover:animation-paused"><i class="fa-brands fa-github"></i></a>
                     <a target="_blank" href="https://www.linkedin.com/in/mewadee-seeda-1bb16830b/" class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-main-purple-500 hover:shadow-lg hover:shadow-slate-900 hover:animation-paused"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
 
+            <div id="igmenu" class="hidden fixed [&>a]:bg-white [&>a]:text-black [&>a]:p-4 [&>a]:m-4 [&>a]:rounded bottom-[45%]">
+                <a target="_blank" onclick="openInstagramMenu()" href="https://www.instagram.com/mstxz.blend/">mstxz.blend</a>
+                <a target="_blank" onclick="openInstagramMenu()" href="https://www.instagram.com/mstxz.exe/">mstxz.exe</a>
+            </div>
+
             </section>
             <!--About-->
             <section id="about" class="h-screen flex justify-center gap-10 items-center p-10 text-left w-[calc(100vw-30px)] gap-y-10 lg:flex-row sm:flex-col">
-                <h1 class="font-bold text-[100px]">Who am I?</h1>
+                <h1 class="font-bold font-header text-[100px]">Who am I?</h1>
                 <div class="w-[60%] flex flex-col gap-5">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia corporis maiores asperiores consequuntur sapiente, illum nam aliquam distinctio in. Eos, culpa ex. Obcaecati officia necessitatibus minima, laborum modi autem voluptate?</p>
                     <a href="#" class="flex justify-center text-2xl font-bold w-[300px] py-2 bg-slate-200 text-[#4f3970] rounded-full">More about me</a>
@@ -103,7 +108,7 @@
             </section>
 
             <section id="work" class="flex flex-col h-screen justify-center items-center">
-                <h1 class="text-7xl font-bold">Works</h1>
+                <h1 class="text-7xl font-bold font-header">Works</h1>
                 <div class="flex justify-evenly w-[90%] gap-10 m-20 [&>a]:h-[50vh] max-[1500px]:grid max-[1500px]:grid-cols-2 max-[1500px]:[&>a]:h-[30vh]">
                     <a href="games.html" class="flex transition-all duration-300 w-full justify-center items-center rounded-lg border-2 border-slate-400/60 bg-gradient-to-b from-slate-700/50 to-slate-900/50 hover:bg-slate-50">
                         <h1 class="font-bold flex gap-10 items-center text-2xl"><i class="fa-solid fa-gamepad text-3xl"></i>Game Development</h1>
