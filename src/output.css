@@ -875,6 +875,12 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.from-blue-700 {
+  --tw-gradient-from: #1d4ed8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(29 78 216 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-main-purple-700 {
   --tw-gradient-from: #574182 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(87 65 130 / 0) var(--tw-gradient-to-position);
