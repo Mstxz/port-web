@@ -30,7 +30,7 @@
     }
 }
 
-#home div a{
+#home div a:not("igaccount"){
     animation: hero-appear-div 1.5s both;
 }
 

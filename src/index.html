@@ -12,7 +12,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Dosis:wght@200..800&family=Oswald:wght@200..700&family=Poiret+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <!--Titiles and Icons-->
     <title>Mstxz</title>
@@ -53,16 +52,17 @@
         </div >
         <!--Header-->
         <header class="text-slate-100 flex justify-around items-center py-10 fixed text-[1.05rem] w-screen bg-gradient-to-b from-slate-800 z-10">
-            <h1 class="font-semibold font-header text-3xl animate-headeranimation">Mstxz</h1>
+            <h1 class="tracking-wider font-semibold font-header text-3xl animate-headeranimation">Mstxz</h1>
             <button onclick="openMenu()" class="animate-headeranimation"><i class="fa fa-bars text-3xl"></i></button>
         </header>
 
+        <!--Menu-->
         <div id="menu" class="justify-evenly fixed right-0 w-[25%] z-20 bg-slate-800 bg-opacity-60 h-screen text-slate-50 hidden max-[968px]:w-full">
             <h1 class="fixed text-7xl top-10 px-10">Menu</h1>
             <button onclick="closeMenu()" class="fixed top-5 right-5 text-4xl"><i class="fa fa-xmark"></i></button>
             <div class="flex flex-col gap-4 justify-center h-full">
                 <ul>
-                    <li class="px-10 py-2 hover:translate-x-4 transition-all"><a class="flex gap-3 items-center text-xl" href="#home"><i class="fa fa-home"></i>Home</a></li>
+                    <li class="px-10 py-2 hover:translate-x-4 transition-all"><a class="flex gap-3 items-center text-xl" href="index.html"><i class="fa fa-home"></i>Home</a></li>
                     <li class="px-10 py-2 hover:translate-x-4 transition-all"><a class="flex gap-3 items-center text-xl" href="#about"><i class="fa fa-user"></i>About</a></li>
                     <li class="px-10 py-2 hover:translate-x-4 transition-all"><a class="flex gap-3 items-center text-xl" href="#work"><i class="fa fa-briefcase"></i>Works</a></li>
                     <li class="px-10 py-2 hover:translate-x-4 transition-all"><a class="flex gap-3 items-center text-xl" href="games.html"><i class="fa fa-gamepad"></i>Game Development</a></li>
@@ -75,6 +75,7 @@
                     <li><button>Audio</button></li>
                     <li><button onclick="changeTheme()">Theme</button></li>
                 </ul>
+                <h1 class="opacity-60 text-main-purple-200">**This website is working in progress, stay tuned</h1>
             </div>
         </div>
 
@@ -92,14 +93,14 @@
                     <a target="_blank" href="https://www.linkedin.com/in/mewadee-seeda-1bb16830b/" class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-main-purple-500 hover:shadow-lg hover:shadow-slate-900 hover:animation-paused"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
 
-            <div id="igmenu" class="hidden fixed [&>a]:bg-white [&>a]:text-black [&>a]:p-4 [&>a]:m-4 [&>a]:rounded bottom-[45%]">
-                <a target="_blank" onclick="openInstagramMenu()" href="https://www.instagram.com/mstxz.blend/">mstxz.blend</a>
-                <a target="_blank" onclick="openInstagramMenu()" href="https://www.instagram.com/mstxz.exe/">mstxz.exe</a>
+            <div id="igmenu" class="hidden fixed [&>a]:bg-white [&>a]:text-black [&>a]:p-4 [&>a]:m-4 [&>a]:rounded bottom-[45%] animate-none">
+                <a id="igaccount" target="_blank" onclick="openInstagramMenu()" href="https://www.instagram.com/mstxz.blend/">mstxz.blend</a>
+                <a id="igaccount" target="_blank" onclick="openInstagramMenu()" href="https://www.instagram.com/mstxz.exe/">mstxz.exe</a>
             </div>
 
             </section>
             <!--About-->
-            <section id="about" class="h-screen flex justify-center gap-10 items-center p-10 text-left w-[calc(100vw-30px)] gap-y-10 lg:flex-row sm:flex-col">
+            <section id="about" class="h-screen flex justify-center gap-10 items-center p-10 text-left w-[calc(100vw-30px)] gap-y-10 lg:flex-row md:flex-row sm:flex-col">
                 <h1 class="font-bold font-header text-[100px]">Who am I?</h1>
                 <div class="w-[60%] flex flex-col gap-5">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia corporis maiores asperiores consequuntur sapiente, illum nam aliquam distinctio in. Eos, culpa ex. Obcaecati officia necessitatibus minima, laborum modi autem voluptate?</p>
@@ -108,19 +109,19 @@
             </section>
 
             <section id="work" class="flex flex-col h-screen justify-center items-center">
-                <h1 class="text-7xl font-bold font-header">Works</h1>
-                <div class="flex justify-evenly w-[90%] gap-10 m-20 [&>a]:h-[50vh] max-[1500px]:grid max-[1500px]:grid-cols-2 max-[1500px]:[&>a]:h-[30vh]">
+                <h1 class="text-7xl font-bold font-header tracking-wider">Works</h1>
+                <div class="flex justify-evenly w-[90%] gap-10 m-20 [&>a]:h-[50vh] max-[1500px]:grid max-[1500px]:grid-cols-2 max-[1500px]:[&>a]:h-[30vh] [&>a]:sm:flex-col [&>a]:md:flex-row [&>a]:sm:justify-center [&>a]:md:justify-evenly">
                     <a href="games.html" class="flex transition-all duration-300 w-full justify-center items-center rounded-lg border-2 border-slate-400/60 bg-gradient-to-b from-slate-700/50 to-slate-900/50 hover:bg-slate-50">
-                        <h1 class="font-bold flex gap-10 items-center text-2xl"><i class="fa-solid fa-gamepad text-3xl"></i>Game Development</h1>
+                        <i class="fa-solid fa-gamepad text-[80px]"></i><h1 class="font-bold flex gap-10 items-center text-2xl">Game Development</h1>
                     </a>
                     <a class="flex transition-all duration-300 w-full justify-center items-center rounded-lg border-2 border-slate-400/60 bg-gradient-to-b from-slate-700/50 to-slate-900/50 hover:bg-slate-100">
-                        <h1 class="font-bold flex gap-10 items-center text-2xl"><i class="fa-solid fa-code text-3xl"></i>Web Development</h1>
+                        <i class="fa-solid fa-code text-[80px]"></i><h1 class="font-bold flex gap-10 items-center text-2xl">Web Development</h1>
                     </a>
                     <a class="flex transition-all duration-300 w-full justify-center items-center rounded-lg border-2 border-slate-400/60 bg-gradient-to-b from-slate-700/50 to-slate-900/50 hover:bg-slate-100">
-                        <h1 class="font-bold flex gap-10 items-center text-2xl"><i class="fa-solid fa-brush text-3xl"></i>Art Gallery</h1>
+                        <i class="fa-solid fa-brush text-[80px]"></i><h1 class="font-bold flex gap-10 items-center text-2xl">Art Gallery</h1>
                     </a>
                     <a href="music.html" class="flex transition-all duration-300 w-full justify-center items-center rounded-lg border-2 border-slate-400/60 bg-gradient-to-b from-slate-700/50 to-slate-900/50 hover:bg-slate-100">
-                        <h1 class="font-bold flex gap-10 items-center text-2xl"><i class="fa-solid fa-music text-3xl"></i>Music Production</h1>
+                        <i class="fa-solid fa-music text-[80px]"></i><h1 class="font-bold flex gap-10 items-center text-2xl">Music Production</h1>
                     </a>
                 </div>
             </section>

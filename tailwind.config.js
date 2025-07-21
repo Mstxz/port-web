@@ -30,7 +30,7 @@ module.exports = {
     },
       fontFamily: {
         'main': ['Poiret One', 'sans-serif'],
-        'header' : ['"Eras ITC"', 'sans-serif'],
+        'header' : ['Bebas Neue', 'sans-serif'],
       }
   },
 
