@@ -1121,6 +1121,14 @@ video {
   transition-duration: 150ms;
 }
 
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-150{
   transition-duration: 150ms;
 }
@@ -1131,6 +1139,18 @@ video {
 
 .ease-linear{
   transition-timing-function: linear;
+}
+
+.hover\:block:hover{
+  display: block;
+}
+
+.hover\:w-\[300px\]:hover{
+  width: 300px;
+}
+
+.hover\:w-\[200px\]:hover{
+  width: 200px;
 }
 
 .hover\:translate-x-4:hover{
@@ -1172,6 +1192,14 @@ video {
 .hover\:shadow-slate-900:hover{
   --tw-shadow-color: #0f172a;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.group:hover .group-hover\:block{
+  display: block;
+}
+
+.group:hover .group-hover\:flex{
+  display: flex;
 }
 
 @media (max-width: 1500px){
@@ -1268,6 +1296,10 @@ video {
   .\[\&\>div\]\:lg\:w-\[500px\]>div{
     width: 500px;
   }
+}
+
+.hover\:\[\&\>i\]\:block>i:hover{
+  display: block;
 }
 
 .\[\&\>section\]\:h-screen>section{
