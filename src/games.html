@@ -25,35 +25,16 @@
     <link rel="stylesheet" href="style/loader.css">
     <link rel="stylesheet" href="style/headeranimation.css">
 
+    <script src="script/fetchcomponent.js" defer></script>
+
 </head>
 <body onload="loaderFunction()" class="h-screen font-main bg-gradient-to-b from-main-purple-700 to-slate-800 bg-fixed">
-    <div id="loader" class="text-slate-100 flex flex-col justify-center items-center h-screen">
-        <h1 class="text-[100px]">Mstxz</h1>
-        <div class="w-[500px] h-3 bg-slate-800 fixed top-[calc(50%+60px)]"></div>
-        <div id="loader-progress" class="w-[500px] h-3 bg-slate-100 fixed top-[calc(50%+60px)] shadow-xl shadow-white"></div>
-        <h6 class="fixed top-[calc(50%+100px)]">Loading...</h6>
-    </div>
+    <div id="loader" class="text-slate-100 flex flex-col justify-center items-center h-screen"></div>
 
     <div id="content" class="hidden">
-        <div class="area fixed w-screen h-screen" >
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div >
+        <div id="particle" class="area fixed w-screen h-screen" ></div>
         <!--Header-->
-        <header class="text-slate-100 flex justify-around items-center py-10 fixed text-[1.05rem] w-screen bg-gradient-to-b from-slate-800 z-10">
-            <h1 class="tracking-wider font-semibold font-header text-3xl animate-headeranimation">Mstxz</h1>
-            <button onclick="openMenu()" class="animate-headeranimation"><i class="fa fa-bars text-3xl"></i></button>
-        </header>
+        <div id="header"></div>
 
         <!--Menu-->
         <div id="menu" class="justify-evenly fixed right-0 w-[25%] z-20 bg-slate-800 bg-opacity-60 h-screen text-slate-50 hidden max-[968px]:w-full">

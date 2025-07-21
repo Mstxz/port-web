@@ -23,38 +23,20 @@
     <link rel="stylesheet" href="style/particle.css">
     <link rel="stylesheet" href="style/loader.css">
 
+    <!--Script-->
+    <script src="script/fetchcomponent.js" defer></script>
 
 </head>
 <body onload="loaderFunction()" class="h-screen font-main bg-gradient-to-b from-main-purple-700 to-slate-800 bg-fixed">
 
     <!--Loader-->
-    <div id="loader" class="text-slate-100 flex flex-col justify-center items-center h-screen">
-        <h1 class="text-[100px]">Mstxz</h1>
-        <div class="w-[500px] h-3 bg-slate-800 fixed top-[calc(50%+60px)]"></div>
-        <div id="loader-progress" class="w-[500px] h-3 bg-slate-100 fixed top-[calc(50%+60px)] shadow-xl shadow-white"></div>
-        <h6 class="fixed top-[calc(50%+100px)]">Loading...</h6>
-    </div>
+    <div id="loader" class="text-slate-100 flex flex-col justify-center items-center h-screen"></div>
 
+    <!--Particle-->
     <div id="content" class="hidden">
-        <div class="area fixed w-screen h-screen" >
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div >
+        <div id="particle" class="area fixed w-screen h-screen" ></div>
         <!--Header-->
-        <header class="text-slate-100 flex justify-around items-center py-10 fixed text-[1.05rem] w-screen bg-gradient-to-b from-slate-800 z-10">
-            <h1 class="tracking-wider font-semibold font-header text-3xl animate-headeranimation">Mstxz</h1>
-            <button onclick="openMenu()" class="animate-headeranimation"><i class="fa fa-bars text-3xl"></i></button>
-        </header>
+        <div id="header"></div>
 
         <!--Menu-->
         <div id="menu" class="justify-evenly fixed right-0 w-[25%] z-20 bg-slate-800 bg-opacity-60 h-screen text-slate-50 hidden max-[968px]:w-full">
@@ -83,7 +65,7 @@
         <main class=" text-slate-100">
             <!--Hero-->
             <section id="home" class="flex flex-col h-screen justify-center items-center">
-                <h1 class="text-[100px] tracking-wider font-header" style="text-shadow: 0 0 30px aliceblue;">Mstxz</h1>
+                <h1 class="text-[150px] tracking-wider font-header" style="text-shadow: 0 0 30px aliceblue;">Mstxz</h1>
                 <h4 class="text-[20px]">Welcome to <span class="font-bold">Mstxz's</span> official Showcase</h4>
                 <div class="flex gap-7 py-10 text-2xl">
                     <a target="_blank" id="igbutton" onclick="openInstagramMenu()"  class="flex justify-center items-center bg-slate-800 w-[65px] h-[65px] text-center rounded-full transition-all hover:bg-slate-100 hover:text-main-purple-500 hover:shadow-lg hover:shadow-slate-900 hover:animation-paused"><i class="fa-brands fa-instagram"></i></a>
