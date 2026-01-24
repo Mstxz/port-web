@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+    --color-ci-1: #623e7c;
+}
