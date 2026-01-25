@@ -1,0 +1,82 @@
+[
+    {
+        "id": "unrealengine",
+        "name": "Unreal Engine",
+        "type": "Game Development"
+    },
+    {
+        "id": "unity",
+        "name": "Unity",
+        "type": "Game Development"
+    },
+    {
+        "id": "robloxstudio",
+        "name": "Roblox Studio",
+        "type": "Game Development"
+    },
+    {
+        "id": "flstudio",
+        "name": "FL Studio",
+        "type": "Music Production"
+    },
+    {
+        "id": "blender",
+        "name": "Blender 3D",
+        "type": "3D Modeling"
+    },
+    {
+        "id": "adobesubstancepainter",
+        "name": "Substance Painter",
+        "type": "3D Modeling"
+    },
+    {
+        "id": "adobephotoshop",
+        "name": "Photoshop",
+        "type": "Graphic Design"
+    },
+    {
+        "id": "adobeillustrator",
+        "name": "Illustrator",
+        "type": "Graphic Design"
+    },
+    {
+        "id": "figma",
+        "name": "Figma",
+        "type": "UX/UI Design"
+    },
+    {
+        "id": "html5",
+        "name": "Html",
+        "type": "Web Development"
+    },
+    {
+        "id": "css",
+        "name": "CSS",
+        "type": "Web Development"
+    },
+    {
+        "id": "javascript",
+        "name": "Javascript",
+        "type": "Web Development"
+    },
+    {
+        "id": "tailwindcss",
+        "name": "TailwindCSS",
+        "type": "Web Development"
+    },
+    {
+        "id": "git",
+        "name": "Git",
+        "type": "Web Development"
+    },
+    {
+        "id": "nodedotjs",
+        "name": "Node.js",
+        "type": "Web Development"
+    },
+    {
+        "id": "vite",
+        "name": "Vite",
+        "type": "Web Development"
+    }
+]

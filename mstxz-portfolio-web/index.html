@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="select-none box-border">
+<html lang="en" class="select-none box-border scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +18,43 @@
             <h1 class="text-6xl font-header">Mstxz</h1>
             <p>Beyond Imagination, Through Reality.</p>
             <nav class="flex gap-5">
-                <a target="_blank" href="https://github.com/Mstxz"><i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="https://www.instagram.com/mstxz.blend/"><i class="fa-brands fa-instagram"></i></a>
-                <a target="_blank" href="https://www.youtube.com/@mstxz-exe"><i class="fa-brands fa-youtube"></i></a>
-                <a target="_blank" href="http://soundcloud.com/mstxz-exe"><i class="fa-brands fa-soundcloud"></i></a>
-                <a target="_blank" href="https://sketchfab.com/MysticzXD"><i class="fa-solid fa-cube"></i></a>
+                <a target="_blank" href="https://github.com/Mstxz"><img src="https://cdn.simpleicons.org/github/white" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/mstxz.blend/"><img src="https://cdn.simpleicons.org/instagram/white" alt=""></a>
+                <a target="_blank" href="https://www.youtube.com/@mstxz-exe"><img src="https://cdn.simpleicons.org/youtube/white" alt=""></a>
+                <a target="_blank" href="http://soundcloud.com/mstxz-exe"><img src="https://cdn.simpleicons.org/soundcloud/white" alt=""></a>
+                <a target="_blank" href="https://sketchfab.com/MysticzXD"><img src="https://cdn.simpleicons.org/sketchfab/white" alt=""></a>
             </nav>
         </section>
+
+        <section id="experience" class="flex justify-evenly items-center">
+            <div id="exp-information" class="flex flex-col gap-3">
+                <h1 class="text-3xl">Experiences</h1>
+                <ul>
+                    <li>Game Development</li>
+                    <li>3D Modeling</li>
+                    <li>Music Production</li>
+                    <li>Graphic Design</li>
+                    <li>UX/UI Design</li>
+                    <li>Frontend Development</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+            <div id="exp-techstack" class="grid grid-cols-2 gap-3">
+
+            </div>
+        </section>
+
+        <footer class="h-[50vh]">
+            <form>
+                <label for="secretcode">Enter Secret Password: </label>
+                <input type="text" name="" id="secretcode" placeholder="secret code here" class="bg-white text-gray-500 px-2"/>
+                <button type="button" onclick="checkForPassword()">Enter</button>
+            </form>
+        </footer>
     </main>
 
+    <script type="module" src="src/script/secretpage.js"></script>
+    <script type="module" src="src/script/addbadge.js"></script>
     <script type="module" src="src/script/socialmediahero.js"></script>
 </body>
 </html>
