@@ -10,7 +10,7 @@
     "tailwind": "npx tailwindcss -i .\\src\\style\\input.css -o .\\src\\style\\output.css --watch"
   },
   "devDependencies": {
-    "vite": "^7.2.4"
+    "vite": "^7.3.1"
   },
   "dependencies": {
     "lunarphase-js": "^2.0.3",
