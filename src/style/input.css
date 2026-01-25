@@ -1,19 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nova+Slim&display=swap');
 @import "tailwindcss";
 
 @theme {
-    --color-ci-purple-1: #231942;
-    --color-ci-purple-2: #5E548e;
-    --color-ci-purple-3: #9f86c0;
-    --color-ci-purple-4: #be95c4;
-    --color-ci-purple-5: #e0b1cb;
-
-    --color-ci-blue-1: #0e141c;
-    --color-ci-blue-2: #314b6e;
-    --color-ci-blue-3: #607ea2;
-    --color-ci-blue-4: #8197ac;
-    --color-ci-blue-5: #d8e7ee;
-
-    --font-header: "Nova Slim", system-ui;
-    --font-primary: "Dosis", sans-serif;
+    --color-ci-1: #623e7c;
 }
