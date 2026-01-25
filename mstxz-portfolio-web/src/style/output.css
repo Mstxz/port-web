@@ -192,8 +192,14 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .items-center {
     align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .justify-evenly {
     justify-content: space-evenly;
@@ -227,6 +233,11 @@
   .select-none {
     -webkit-user-select: none;
     user-select: none;
+  }
+  .\[\&\>section\]\:h-screen {
+    &>section {
+      height: 100vh;
+    }
   }
 }
 @property --tw-border-style {
