@@ -1,1 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nova+Slim&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --font-header: "Nova Slim", system-ui;
+    --font-primary: "Dosis", sans-serif;
+
+    --color-ci-1: #3f2a52;
+    --color-ci-2: #75619d;
+}
