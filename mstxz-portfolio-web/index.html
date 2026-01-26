@@ -10,7 +10,7 @@
 
     <script type="module" src="src/script/utils/fetchcomponent.js" defer></script>
 </head>
-<body class="text-white font-primary bg-linear-to-bl from-ci-2 to-ci-1">
+<body class="text-white font-primary bg-linear-to-bl from-ci-2 to-ci-1 bg-cover bg-fixed bg-no-repeat">
     <header></header>
 
     <main class="[&>section]:h-screen">
@@ -23,6 +23,7 @@
                 <a target="_blank" href="https://www.youtube.com/@mstxz-exe"><img src="https://cdn.simpleicons.org/youtube/white" alt=""></a>
                 <a target="_blank" href="http://soundcloud.com/mstxz-exe"><img src="https://cdn.simpleicons.org/soundcloud/white" alt=""></a>
                 <a target="_blank" href="https://sketchfab.com/MysticzXD"><img src="https://cdn.simpleicons.org/sketchfab/white" alt=""></a>
+                <a target="_blank" href="https://www.roblox.com/users/929535497/profile"><img src="https://cdn.simpleicons.org/roblox/white" alt=""></a>
             </nav>
         </section>
 
@@ -44,11 +45,17 @@
             </div>
         </section>
 
-        <footer class="h-[50vh]">
-            <form>
-                <label for="secretcode">Enter Secret Password: </label>
+        <footer class="h-30 bg-slate-800/50 flex justify-evenly p-5">
+            <section class="flex flex-col justify-center">
+                <h1 class="text-lg">Mstxz</h1>
+                <ul>
+                    <li>Email: mewadee.s.mstxz@gmail.com</li>
+                </ul>
+            </section>
+            <form class="flex items-center gap-5">
+                <label for="secretcode">Enter Secret Password:</label>
                 <input type="text" name="" id="secretcode" placeholder="secret code here" class="bg-white text-gray-500 px-2"/>
-                <button type="button" onclick="checkForPassword()">Enter</button>
+                <button type="button" onclick="checkForPassword()" class="bg-slate-800 rounded-lg px-5 py-2">Enter</button>
             </form>
         </footer>
     </main>

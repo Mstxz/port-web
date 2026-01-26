@@ -1,7 +1,7 @@
 function checkForPassword(){
     let pwcheck = document.getElementById("secretcode");
     if (pwcheck.value == "Mstxz_EXE3980"){
-        alert("Hi");
+        window.location.href = '/secretpage.html';
     }
     else {
         alert("Invalid Password");
