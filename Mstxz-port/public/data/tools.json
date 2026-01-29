@@ -46,5 +46,9 @@
   {
     "id": "siVercel",
     "bg": "dark"
+  },
+  {
+    "id": "siPython",
+    "bg": "dark"
   }
 ]
