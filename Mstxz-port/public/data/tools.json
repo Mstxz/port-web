@@ -1,0 +1,50 @@
+[
+  {
+    "id": "siUnrealengine",
+    "bg": "dark"
+  },
+  {
+    "id": "siBlender",
+    "bg": "dark"
+  },
+  {
+    "id": "siRobloxstudio",
+    "bg": "dark"
+  },
+  {
+    "id": "siUnity",
+    "bg": "light"
+  },
+  {
+    "id": "siFigma",
+    "bg": "dark"
+  },
+  {
+    "id": "siHtml5",
+    "bg":"dark"
+  },
+  {
+    "id": "siCss",
+    "bg": "dark"
+  },
+  {
+    "id": "siJavascript",
+    "bg": "light"
+  },
+  {
+    "id": "siTailwindcss",
+    "bg": "dark"
+  },
+  {
+    "id": "siVite",
+    "bg": "dark"
+  },
+  {
+    "id": "siNodedotjs",
+    "bg": "dark"
+  },
+  {
+    "id": "siVercel",
+    "bg": "dark"
+  }
+]
