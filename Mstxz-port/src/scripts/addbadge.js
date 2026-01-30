@@ -17,7 +17,7 @@ Promise.all([
 
     const badge = document.createElement("div");
     badge.innerHTML = badgeTemplate;
-    badge.className = "flex gap-2 justify-center px-4 py-2 rounded-full";
+    badge.className = "flex gap-2 justify-center px-4 py-2 rounded-full origin-left";
     badge.style.opacity = 0;
 
     badge.querySelector("#icon").innerHTML = renderIcon(icon, 24);
@@ -34,7 +34,8 @@ Promise.all([
     toolpanel.appendChild(badge);
 
     badge.animate({
-      opacity: [0,1]
+      opacity: [0,1],
+      transform: ['scaleX(0)', 'scaleX(1)']
     },
     {
       fill: "forwards",
