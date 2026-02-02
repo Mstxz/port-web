@@ -1,0 +1,18 @@
+[
+    {
+        "id": "project01",
+        "name": "Cropetalia",
+        "desc": "lorem ipsum dolor sit amet",
+        "tools": ["siUnrealengine", "siBlender"],
+        "status": "working",
+        "url": ""
+    },
+    {
+        "id":"project02",
+        "name": "Visage of the Vile",
+        "desc": "The Game project from Global Game Jam 2026 under the theme \"Mask\"",
+        "tools": ["siUnrealengine", "siBlender"],
+        "status": "done",
+        "url": "https://globalgamejam.org/games/2026/visage-vile-1"
+    }
+]
