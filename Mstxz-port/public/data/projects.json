@@ -2,10 +2,11 @@
     {
         "id": "project01",
         "name": "Cropetalia",
-        "desc": "lorem ipsum dolor sit amet",
+        "desc": "The RPG/Farming Game Project",
         "tools": ["siUnrealengine", "siBlender"],
         "status": "working",
-        "url": ""
+        "url": "https://github.com/Mstxz/cropetalia",
+        "images": "/img/cropetalia.png"
     },
     {
         "id":"project02",
@@ -13,6 +14,16 @@
         "desc": "The Game project from Global Game Jam 2026 under the theme \"Mask\"",
         "tools": ["siUnrealengine", "siBlender"],
         "status": "done",
-        "url": "https://globalgamejam.org/games/2026/visage-vile-1"
+        "url": "https://globalgamejam.org/games/2026/visage-vile-1",
+        "images": "/img/visageofthevile.png"
+    },
+    {
+        "id": "project03",
+        "name": "Instinct",
+        "desc": "The Game project from Hamsterhub Game Jam 3 under the theme \"Reflection\"",
+        "tools": ["siUnity", "siAseprite"],
+        "status": "done",
+        "url": "https://lost-penguin.itch.io/instinct",
+        "images":"/img/Instinct.png"
     }
 ]

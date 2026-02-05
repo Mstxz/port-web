@@ -15,6 +15,7 @@ Promise.all(
 
         gallery.innerHTML = comp;
 
+        gallery.querySelector('img').src = element.images;
         gallery.querySelector('h1').textContent = element.name;
         gallery.querySelector('p').textContent = element.desc;
 
