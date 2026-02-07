@@ -14,10 +14,8 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
-    "express": "^5.2.1",
     "lunarphase-js": "^2.0.3",
     "nodemon": "^3.1.11",
-    "simple-icons": "^16.6.1",
-    "vite-express": "^0.22.1"
+    "simple-icons": "^16.6.1"
   }
 }
