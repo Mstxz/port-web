@@ -6,6 +6,7 @@
     <title>Mstxz</title>
 
     <link rel="stylesheet" href="src/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
 </head>
 <body class="font-primary bg-linear-to-b from-ci-2 to-ci-1 text-ci-3 bg-cover bg-center bg-fixed bg-no-repeat w-full h-screen overflow-x-hidden">
     <header class="flex justify-evenly items-center fixed w-screen h-16 z-50 bg-linear-to-b from-black/50 to-transparent">
@@ -13,7 +14,7 @@
         <nav class="flex items-center gap-5">
             <a href="#about">About</a>
             <a href="#experience">Experiences</a>
-            <a href="/project">Projects</a>
+            <a href="#project">Projects</a>
         </nav>
     </header>
 
@@ -58,13 +59,23 @@
             </div>
         </section>
 
-        <section id="project" class="flex flex-col items-center justify-center">
+        <section id="project" class="flex flex-col justify-center">
             <h1 class="text-3xl font-header">Projects</h1>
-            <div id="gallery" class="p-20 flex flex-wrap justify-center gap-6">
-
+            <div class="flex [&>div]:w-1/2 h-[80%]">
+                <div class="bg-slate-700/60 h-full">
+                    <h1 class="text-2xl p-4">Visit the spotlight</h1>
+                    <ul class="[&>li]:px-10 [&>li]:py-4 text-lg font-semibold">
+                        <li><button id="gameBtn">Games</button></li>
+                        <li><button id="artBtn">3D Arts</button></li>
+                        <li><button id="musicBtn">Music Track</button></li>
+                    </ul>
+                </div>
+                <div id="gallery" class="flex flex-col flex-wrap gap-2 items-center">
+                    <p class="bg-black/50 w-full h-full flex justify-center items-center">Click on the left side to see the spotlight</p>
+                </div>
             </div>
+            <a href="public/page/project.html">See More</a>
 
-            <a href="/project">See More</a>
         </section>
     </main>
 

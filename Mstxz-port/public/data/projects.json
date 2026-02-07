@@ -6,7 +6,8 @@
         "tools": ["siUnrealengine", "siBlender"],
         "status": "working",
         "url": "https://github.com/Mstxz/cropetalia",
-        "images": "/img/cropetalia.png"
+        "images": "/img/cropetalia.png",
+        "spotlighted": true
     },
     {
         "id":"project02",
@@ -15,7 +16,8 @@
         "tools": ["siUnrealengine", "siBlender"],
         "status": "done",
         "url": "https://globalgamejam.org/games/2026/visage-vile-1",
-        "images": "/img/visageofthevile.png"
+        "images": "/img/visageofthevile.png",
+        "spotlighted": true
     },
     {
         "id": "project03",
@@ -24,6 +26,7 @@
         "tools": ["siUnity", "siAseprite"],
         "status": "done",
         "url": "https://lost-penguin.itch.io/instinct",
-        "images":"/img/Instinct.png"
+        "images":"/img/Instinct.png",
+        "spotlighted": false
     }
 ]

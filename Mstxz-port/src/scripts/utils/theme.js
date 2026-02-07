@@ -1,4 +1,4 @@
-document.querySelector('body').className = "font-primary bg-linear-to-b from-ci-2 to-ci-1 text-ci-3 bg-cover bg-center bg-fixed bg-no-repeat w-full h-screen overflow-x-hidden";
+document.querySelector('body').className = "font-primary bg-linear-to-b from-ci-purple-1 to-ci-1 text-ci-3 bg-cover bg-center bg-fixed bg-no-repeat w-full h-screen overflow-x-hidden";
 
 fetch('/components/header.html').then(r => r.text()).then(comp => {
     let header = document.querySelector('header');
