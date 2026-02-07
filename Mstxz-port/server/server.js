@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../index.html'));
 });
 
+app.get('/project', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/page/project.html'));
+});
+
 // Use ViteExpress to handle both frontend serving and backend listening
 ViteExpress.listen(app, 3000, () => {
   console.log('Server is listening on http://localhost:3000');
