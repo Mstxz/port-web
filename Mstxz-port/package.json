@@ -9,12 +9,10 @@
     "preview": "vite preview",
     "tw": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
-  "devDependencies": {
-    "vite": "^7.2.4"
-  },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "lunarphase-js": "^2.0.3",
-    "simple-icons": "^16.6.1"
+    "simple-icons": "^16.6.1",
+    "vite": "^7.3.1"
   }
 }

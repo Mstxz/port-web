@@ -8,8 +8,15 @@
 }
 
 @theme {
+    --color-ci-purple-1: #5f4976;
+    --color-ci-purple-2: #8d68ac;
+
+    --color-ci-indigo-1: #4a4b78;
+    --color-ci-indigo-2: #6969a9;
+
+    --color-ci-blue-1: #2a4369;
+    --color-ci-blue-2: #4167b0;
     --color-ci-1: #01010e;
-    --color-ci-2: #44334A;
     --color-ci-3: #D1CDEC;
 
     --font-header: "Monad", sans-serif;
