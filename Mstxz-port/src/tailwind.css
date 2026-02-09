@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @font-face {
@@ -20,4 +21,5 @@
     --color-ci-3: #D1CDEC;
 
     --font-header: "Monad", sans-serif;
+    --font-primary: "Raleway", sans-serif;
 }
