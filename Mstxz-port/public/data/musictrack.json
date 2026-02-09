@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Awakened",
+        "trackurl": "/audio/awakened.mp3",
+        "genre": "Melodic Dubstep",
+        "type": "official",
+        "spotlighted": true
+    },
+    {
+        "name": "Mystery",
+        "trackurl": "/audio/mystery.mp3",
+        "genre": "Melodic Dubstep",
+        "type": "official",
+        "spotlighted": true
+    },
+    {
+        "name": "Skyline",
+        "trackurl": "/audio/skyline.mp3",
+        "genre": "Melodic Dubstep",
+        "type": "official",
+        "spotlighted": true
+    }
+]
