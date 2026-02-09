@@ -8,15 +8,8 @@
 }
 
 @theme {
-    /*Purple*/
-    --color-ci-purple-1: #5f4976;
-    --color-ci-purple-2: #8d68ac;
-
-    /*Indigo*/
-    --color-ci-indigo-1: #4a4b78;
-    --color-ci-indigo-2: #6969a9;
-
     --color-ci-1: #01010e;
+    --color-ci-2: #44334A;
     --color-ci-3: #D1CDEC;
 
     --font-header: "Monad", sans-serif;
