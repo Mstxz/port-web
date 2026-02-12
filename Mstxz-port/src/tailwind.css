@@ -17,8 +17,10 @@
 
     --color-ci-blue-1: #2a4369;
     --color-ci-blue-2: #4167b0;
-    --color-ci-1: #01010e;
-    --color-ci-3: #D1CDEC;
+
+    --color-ci-black-1: #01010e;
+
+    --color-ci-white-1: #D1CDEC;
 
     --font-header: "Monad", sans-serif;
     --font-primary: "Raleway", sans-serif;
