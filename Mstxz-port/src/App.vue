@@ -1,5 +1,6 @@
 <script setup>
 import exBadge from '@/components/experiencebadge.vue'
+import socialBadge from '@/components/socialmedia.vue'
 </script>
 
 <template>
@@ -11,7 +12,7 @@ import exBadge from '@/components/experiencebadge.vue'
             </div>
             <p>Beyond Imagination, Through Reality</p>
             <nav id="social" class="flex gap-5">
-
+                <socialBadge/>
             </nav>
         </section>
 
