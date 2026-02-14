@@ -1,0 +1,72 @@
+[
+  {
+    "id": "siUnrealengine",
+    "bg": "dark",
+    "type": "gameengine"
+  },
+  {
+    "id": "siBlender",
+    "bg": "dark",
+    "type": "3d"
+  },
+  {
+    "id": "siRobloxstudio",
+    "bg": "dark",
+    "type": "gameengine"
+  },
+  {
+    "id": "siUnity",
+    "bg": "light",
+    "type": "gameengine"
+  },
+  {
+    "id": "siFigma",
+    "bg": "dark",
+    "type": "uxui"
+  },
+  {
+    "id": "siHtml5",
+    "bg":"dark",
+    "type": "web"
+  },
+  {
+    "id": "siCss",
+    "bg": "dark",
+    "type": "web"
+  },
+  {
+    "id": "siJavascript",
+    "bg": "light",
+    "type": "web"
+  },
+  {
+    "id": "siTailwindcss",
+    "bg": "dark",
+    "type": "framework"
+  },
+  {
+    "id": "siNodedotjs",
+    "bg": "dark",
+    "type": "devtool"
+  },
+  {
+    "id": "siVercel",
+    "bg": "dark",
+    "type": "devtool"
+  },
+  {
+    "id": "siPython",
+    "bg": "dark",
+    "type": "language"
+  },
+  {
+    "id": "siVite",
+    "bg": "dark",
+    "type": "devtool"
+  },
+  {
+    "id": "siVuedotjs",
+    "bg": "dark",
+    "type": "framework"
+  }
+]

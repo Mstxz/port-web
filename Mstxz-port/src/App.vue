@@ -1,5 +1,5 @@
 <script setup>
-
+import exBadge from '@/components/experiencebadge.vue'
 </script>
 
 <template>
@@ -38,9 +38,7 @@
             </div>
             <div>
                 <h1 class="text-4xl font-header">Tools</h1>
-                <div id="tools" class="flex gap-4 flex-wrap bg-white/30 p-5 rounded-xl">
-
-                </div>
+                <exBadge class="flex gap-4 flex-wrap bg-white/30 p-5 rounded-xl"/>
             </div>
         </section>
 
