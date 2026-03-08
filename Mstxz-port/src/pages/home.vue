@@ -50,8 +50,8 @@ import tools from '@/data/tools.json';
 
   <!-- About Section -->
   <section class="flex justify-center flex-col">
-      <div class="flex gap-4">
-          <Contentcontainer class="w-1/2">
+      <div class="flex gap-4 sm:flex-col flex-col md:flex-row lg:flex-row">
+          <Contentcontainer class="w-1/2 sm:w-full">
                 <h1 class="font-bold text-2xl">About Me</h1>
                 <b>Full Name:</b> Mewadee Seeda<br>
                 <b>Education:</b>
@@ -73,7 +73,7 @@ import tools from '@/data/tools.json';
                     <li>Front-end Web Development</li>
                 </ul>
             </Contentcontainer>
-            <Contentcontainer class="w-1/2">
+            <Contentcontainer class="w-1/2 sm:w-full md:w-1/2">
                 <h1 class="font-semibold text-2xl">Tech Stack</h1>
                 <toolbadge v-for="tool in tools" :key="tool.id" :icon="brandicon[tool.icon]" :id="tool.id"/>
             </Contentcontainer>
