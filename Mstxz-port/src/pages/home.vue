@@ -17,8 +17,8 @@ import tools from '@/data/tools.json';
 </script>
 
 <template>
-<main class="[&>section]:h-screen [&>section]:p-10">
-  <section  class="flex flex-col justify-center items-center space-y-4">
+<main class="[&>section]:p-10">
+  <section  class="flex flex-col justify-center items-center space-y-4 h-screen">
     <h1 class="font-header text-6xl">Mstxz</h1>
     <h2>Beyond Imagination, Through Reality.</h2>
 
@@ -35,7 +35,7 @@ import tools from '@/data/tools.json';
   </section>
 
   <!-- Projects Section -->
-   <section>
+   <section class="h-auto">
         <h1>Projects</h1>
         <Contentcontainer class="space-y-4">
             <div class="flex gap-4">
@@ -49,7 +49,7 @@ import tools from '@/data/tools.json';
    </section>
 
   <!-- About Section -->
-  <section class="flex justify-center flex-col">
+  <section class="flex justify-center flex-col h-auto">
     <div class="flex flex-col md:flex-row gap-4">
   <Contentcontainer class="w-full md:w-1/2">
     <h1 class="font-bold text-2xl">About Me</h1>
