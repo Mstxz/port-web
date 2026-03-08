@@ -17,8 +17,8 @@ import tools from '@/data/tools.json';
 </script>
 
 <template>
-<main class="[&>section]:h-full [&>section]:p-10">
-  <section  class="flex flex-col justify-center items-center space-y-4 h-screen">
+<main class="[&>section]:h-screen [&>section]:p-10">
+  <section  class="flex flex-col justify-center items-center space-y-4">
     <h1 class="font-header text-6xl">Mstxz</h1>
     <h2>Beyond Imagination, Through Reality.</h2>
 
