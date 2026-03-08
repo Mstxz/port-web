@@ -1,0 +1,21 @@
+[
+  { "id": "unrealengine", "icon": "UnrealEngineIcon", "type": "game" },
+  { "id": "unity", "icon": "UnityIcon", "type": "game" },
+  { "id": "robloxstudio", "icon": "RobloxStudioIcon", "type": "game" },
+
+  { "id": "blender", "icon": "BlenderIcon", "type": "design" },
+  { "id": "figma", "icon": "FigmaIcon", "type": "design" },
+  { "id": "aseprite", "icon": "AsepriteIcon", "type": "design" },
+
+  { "id": "html5", "icon": "Html5Icon", "type": "web" },
+  { "id": "css", "icon": "CssIcon", "type": "web" },
+  { "id": "vuedotjs", "icon": "VueDotjsIcon", "type": "web" },
+  { "id": "tailwindcss", "icon": "TailwindCssIcon", "type": "web" },
+
+  { "id": "vite", "icon": "ViteIcon", "type": "devtool" },
+  { "id": "git", "icon": "GitIcon", "type": "devtool" },
+
+  { "id": "javascript", "icon": "JavaScriptIcon", "type": "language" },
+  { "id": "nodedotjs", "icon": "NodeDotjsIcon", "type": "language" },
+  { "id": "python", "icon": "PythonIcon", "type": "language" }
+]

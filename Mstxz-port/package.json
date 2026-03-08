@@ -13,10 +13,14 @@
     "format": "prettier --write --experimental-cli src/"
   },
   "dependencies": {
+    "@hugeicons/core-free-icons": "^3.3.0",
+    "@hugeicons/vue": "^1.0.4",
     "@tailwindcss/vite": "^4.1.18",
-    "simple-icons": "^16.8.0",
+    "simple-icons": "^16.11.0",
     "tailwindcss": "^4.1.18",
-    "vue": "^3.5.27"
+    "vue": "^3.5.27",
+    "vue-router": "^5.0.3",
+    "vue3-simple-icons": "^16.10.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
