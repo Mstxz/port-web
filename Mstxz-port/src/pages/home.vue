@@ -38,9 +38,17 @@ import tools from '@/data/tools.json';
    <section class="h-auto">
         <h1>Projects</h1>
         <Contentcontainer class="space-y-4">
-            <div class="flex gap-4">
-                <inputtext></inputtext>
-                <Buttons shape="square" transition="false"><HugeiconsIcon :icon="icons.Search02Icon"/></Buttons>
+            <div class="flex gap-4 justify-between">
+                <div class="flex gap-2">
+                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.GameController03Icon"/> Games</Buttons>
+                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.WebDesign02Icon"/> Web / UI</Buttons>
+                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.Vynil03Icon"/>Music</Buttons>
+                </div>
+                <div class="flex gap-2">
+                  <inputtext></inputtext>
+                  <Buttons shape="square" transition="false"><HugeiconsIcon :icon="icons.Search02Icon"/></Buttons>
+                  <Buttons @click="go('/project')" variant="solid">View More</Buttons>
+                </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <projectbanner v-for="project in projects" :key="project.id" :projectname="project.name" :thumbnail="project.image"/>
@@ -69,7 +77,7 @@ import tools from '@/data/tools.json';
     <ul class="list-disc pl-8 py-2">
       <li>Game Development</li>
       <li>Game Design</li>
-      <li>Sound Engineer</li>
+      <li>Sound Design</li>
       <li>3D Artist</li>
       <li>UX/UI Design</li>
       <li>Front-end Web Development</li>
