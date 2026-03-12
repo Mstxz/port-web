@@ -1,0 +1,32 @@
+[
+    {
+      "name": "GitHub",
+      "link": "https://github.com/Mstxz",
+      "icon": "GitHubIcon"
+    },
+    {
+      "name": "Instagram",
+      "link": "https://www.instagram.com/mstxz.exe",
+      "icon": "InstagramIcon"
+    },
+    {
+      "name": "YouTube",
+      "link": "https://www.youtube.com/@mstxz-exe",
+      "icon": "YouTubeIcon"
+    },
+    {
+      "name": "SoundCloud",
+      "link": "https://soundcloud.com/mstxz-exe",
+      "icon": "SoundCloudIcon"
+    },
+    {
+      "name": "Sketchfab",
+      "link": "https://sketchfab.com/MysticzXD",
+      "icon": "SketchfabIcon"
+    },
+    {
+      "name": "ArtStation",
+      "link": "https://www.artstation.com/mstxz_exe",
+      "icon": "ArtStationIcon"
+    }
+]

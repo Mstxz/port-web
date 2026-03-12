@@ -13,7 +13,32 @@ import toolbadge from '@/components/toolbadge.vue';
 
 import projects from '@/data/projects.json';
 import tools from '@/data/tools.json';
+import socialData from '@/data/socialmedia.json';
 
+import { ref, onMounted, nextTick } from "vue"
+
+const socialarr = ref([])
+
+onMounted(async () => {
+  await nextTick()
+
+  socialarr.value.forEach((comp, i) => {
+    const el = comp.$el
+
+    el.animate(
+      {
+        opacity: [0, 1],
+        transform: ['rotateZ(180deg)', 'rotateZ(0)']
+      },
+      {
+        duration: 500,
+        delay: i * 120 + 500,
+        easing: 'ease',
+        fill: 'forwards'
+      }
+    )
+  })
+})
 </script>
 
 <template>
@@ -24,13 +49,9 @@ import tools from '@/data/tools.json';
 
     <!-- Hero Section -->
     <nav class="flex justify-center gap-4">
-        <socialmedia ref="socialarr" links="https://github.com/Mstxz"><brandicon.GitHubIcon/></socialmedia>
-        <socialmedia ref="socialarr" links="https://www.instagram.com/mstxz.exe"><brandicon.InstagramIcon/></socialmedia>
-        <socialmedia ref="socialarr" links="https://www.youtube.com/@mstxz-exe"><brandicon.YouTubeIcon/></socialmedia>
-        <socialmedia ref="socialarr" links="https://soundcloud.com/mstxz-exe"><brandicon.SoundCloudIcon/></socialmedia>
-        <socialmedia ref="socialarr" links="https://discord.gg/V9pX6PsHMK"><brandicon.DiscordIcon/></socialmedia>
-        <socialmedia ref="socialarr" links="https://sketchfab.com/MysticzXD"><brandicon.SketchfabIcon/></socialmedia>
-        <socialmedia ref="socialarr" links="https://www.artstation.com/mstxz_exe"><brandicon.ArtStationIcon/></socialmedia>
+      <socialmedia ref="socialarr" v-for="social in socialData" :key="social.name" :links="social.link" style="opacity: 0;">
+        <component :is="brandicon[social.icon]" />
+      </socialmedia>
     </nav>
   </section>
 
@@ -73,7 +94,7 @@ import tools from '@/data/tools.json';
       <li>2025 - Now | Co-Founder, Staff @GamiDev</li>
     </ul>
 
-    <b>Skills:</b>
+    <b>Skills & Interests:</b>
     <ul class="list-disc pl-8 py-2">
       <li>Game Development</li>
       <li>Game Design</li>
