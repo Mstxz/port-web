@@ -15,6 +15,7 @@
   "dependencies": {
     "@hugeicons/core-free-icons": "^3.3.0",
     "@hugeicons/vue": "^1.0.4",
+    "@supabase/supabase-js": "^2.99.1",
     "@tailwindcss/vite": "^4.1.18",
     "simple-icons": "^16.11.0",
     "tailwindcss": "^4.1.18",

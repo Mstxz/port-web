@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <header class="flex justify-between items-center px-6 py-2 text-lg fixed w-screen bg-linear-to-b from-ci-black-1">
+    <header class="flex justify-between items-center px-6 py-2 text-lg fixed top-0 w-screen bg-linear-to-b from-ci-black-1">
         <img src="/icon.svg" alt="icon" class="w-16 h-16 object-center" draggable="false" @click="go('/')">
         <nav class="space-x-6 [&>button]:hover:cursor-pointer hidden items-center sm:hidden md:flex lg:flex">
             <button @click="go('/about')">About</button>

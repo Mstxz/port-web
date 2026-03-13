@@ -28,12 +28,12 @@ onMounted(async () => {
     el.animate(
       {
         opacity: [0, 1],
-        transform: ['rotateZ(180deg)', 'rotateZ(0)']
+        transform: ['scale(0.7) rotateZ(180deg)', 'rotateZ(0)']
       },
       {
         duration: 500,
-        delay: i * 120 + 500,
-        easing: 'ease',
+        delay: i * 120 + 1000,
+        easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
         fill: 'forwards'
       }
     )
@@ -43,9 +43,9 @@ onMounted(async () => {
 
 <template>
 <main class="[&>section]:p-10">
-  <section  class="flex flex-col justify-center items-center space-y-4 h-screen">
-    <h1 class="font-header text-6xl">Mstxz</h1>
-    <h2>Beyond Imagination, Through Reality.</h2>
+  <section class="flex flex-col justify-center items-center space-y-4 h-screen">
+    <h1 class="font-header text-6xl header-animate">Mstxz</h1>
+    <h2 class="quote-animate" style="opacity: 0;">Beyond Imagination, Through Reality.</h2>
 
     <!-- Hero Section -->
     <nav class="flex justify-center gap-4">
@@ -119,3 +119,35 @@ onMounted(async () => {
   </section>
 </main>
 </template>
+
+<style>
+@keyframes headerappear {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes quoteappear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header-animate {
+  animation: headerappear 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-duration: 0.5s;
+}
+
+.quote-animate {
+  animation: quoteappear 1s ease-in-out forwards;
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+}
+</style>

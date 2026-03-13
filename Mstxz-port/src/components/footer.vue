@@ -1,4 +1,5 @@
 <script setup>
+import { go } from '@/utils/navigation';
 import * as brandicon from 'vue3-simple-icons';
 </script>
 
@@ -32,6 +33,7 @@ function test(){
             break;
         case 'ZX_I_SW#3x3':
             alert('No one can enter this zone')
+            go('/selfsecret');
             break;
         default:
             alert(`Invalid Code "${code.value}", please contact the owner if there is an error`)

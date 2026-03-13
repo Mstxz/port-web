@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import Home from '@/pages/home.vue';
 import Project from '@/pages/project.vue';
+import Selfsecret from '@/pages/selfsecret.vue';
 
 const routes = [
     {
@@ -11,6 +12,10 @@ const routes = [
     {
         path: '/project',
         component: Project
+    },
+    {
+        path: '/selfsecret',
+        component: Selfsecret
     }
 ]
 
