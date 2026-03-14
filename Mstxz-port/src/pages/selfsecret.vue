@@ -58,29 +58,31 @@ const totalPrice = computed(() => {
 
 <template>
     <main class="pt-24 mx-5 space-y-5">
-        <Contentcontainer>
-            <h1 class="text-4xl font-semibold font-header">Welcome Back, Mstxz</h1>
-            <p>This is secret, do not let others see this</p>
-        </Contentcontainer>
+      <Contentcontainer>
+          <h1 class="text-4xl font-semibold font-header">Welcome Back, Mstxz</h1>
+          <p>This is secret, do not let others see this</p>
+      </Contentcontainer>
 
-        <section>
-            <Contentcontainer>
-                <h1 class="text-2xl">Shopping List</h1>
-                <hr>
-                <div class="space-y-4 p-4">
-                    <Shoppinglistbanner v-for="item in items" :key="item.id" :id="item.id" :name="item.ItemName" :price="item.Price" :links="item.links"/>
-                    <h1 class="font-bold">Total Price: {{ totalPrice.toFixed(2) }}</h1>
-                </div>
+      <Contentcontainer>
+        <h1 class="text-2xl">Shopping List</h1>
+        <hr>
+        <div class="space-y-4 p-4">
+            <Shoppinglistbanner v-for="item in items" :key="item.id" :id="item.id" :name="item.ItemName" :price="item.Price" :links="item.links"/>
+            <h1 class="font-bold">Total Price: {{ totalPrice.toFixed(2) }}</h1>
+        </div>
 
+        <hr>
+        <h1>Add Item to shopping list here</h1>
+        <input v-model="newName" placeholder="Name">
+        <input v-model="newPrice" placeholder="Price">
+        <input v-model="newLink" placeholder="Link">
 
-                <hr>
-                <h1>Add Item to shopping list here</h1>
-                <input v-model="newName" placeholder="Name">
-                <input v-model="newPrice" placeholder="Price">
-                <input v-model="newLink" placeholder="Link">
+        <Buttons @click="addItem" class="hover:cursor-pointer">Add</Buttons>
+      </Contentcontainer>
 
-                <Buttons @click="addItem" class="hover:cursor-pointer">Add</Buttons>
-            </Contentcontainer>
-        </section>
+      <Contentcontainer>
+        <h1 class="text-2xl">Timeline and Events</h1>
+          <hr>
+      </Contentcontainer>
     </main>
 </template>

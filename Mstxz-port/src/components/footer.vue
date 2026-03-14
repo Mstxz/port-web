@@ -28,11 +28,10 @@ function test(){
     let code = document.getElementById('code');
 
     switch(code.value){
-        case 'IamITKmitl22':
-            alert('Welcome, IT Kmitl')
+        case 'IamIT@KMITL':
+            go('/itkmitl');
             break;
         case 'ZX_I_SW#3x3':
-            alert('No one can enter this zone')
             go('/selfsecret');
             break;
         default:
