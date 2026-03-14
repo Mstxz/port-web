@@ -1,7 +1,7 @@
 <script setup>
 import Contentcontainer from '@/assets/contentcontainer.vue';
-import Semester_subject from '@/components/semester_subject.vue';
-
+import subjectcard from '@/components/subjectcard.vue';
+import semesterData from '@/data/semester.json'
 </script>
 
 <template>
@@ -21,7 +21,17 @@ import Semester_subject from '@/components/semester_subject.vue';
       </Contentcontainer>
 
       <Contentcontainer>
-        <Semester_subject/>
+        <div v-for="(subjects, semester) in semesterData" :key="semester">
+
+    <h2>{{ semester }}</h2>
+
+      <subjectcard
+        v-for="subject in subjects"
+        :key="subject.id"
+        :subject="subject"
+      />
+
+  </div>
       </Contentcontainer>
     </main>
 </template>
