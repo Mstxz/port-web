@@ -72,7 +72,7 @@ onMounted(async () => {
                 </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <projectbanner v-for="project in projects" :key="project.id" :projectname="project.name" :thumbnail="project.image"/>
+                <projectbanner v-for="project in projects" :key="project.id" :projectname="project.name" :thumbnail="project.image" :projecttype="project.type"/>
             </div>
         </Contentcontainer>
    </section>

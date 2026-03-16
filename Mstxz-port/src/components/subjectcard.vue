@@ -1,12 +1,14 @@
 <script setup>
+    import contentcontainer from '@/assets/contentcontainer.vue';
     import Buttons from '@/assets/buttons.vue';
+import Contentcontainer from '@/assets/contentcontainer.vue';
     defineProps({
         subject: Object
     })
 </script>
 
 <template>
-  <div class="course border p-4">
+  <Contentcontainer class="course p-4" variant="variant-border-1">
 
     <div class="flex justify-between">
         <h3 class="text-xl font-semibold">{{ subject.name }}</h3>
@@ -24,7 +26,7 @@
 
     <div v-if="subject.source?.length">
         <h1 class="font-bold">Source</h1>
-        <div class="flex gap-4">
+        <div class="flex gap-4 flex-wrap">
             <a v-for="rec in subject.source" :key="rec.link" :href="rec.link" target="_blank">
                 <Buttons>
                     {{ rec.label }}
@@ -34,5 +36,5 @@
 
     </div>
 
-  </div>
+  </Contentcontainer>
 </template>

@@ -3,12 +3,14 @@
     "id": "project01",
     "name": "Moonfall",
     "image": "https://i.pinimg.com/736x/b4/d6/12/b4d6129d786bc3d461bc87b8b3f37d73.jpg",
-    "type": "Game"
+    "type": "Game",
+    "description": "เกม RPG Hack n Slash เกี่ยวกับ"
   },
   {
     "id": "project02",
     "name": "Aetherlyn",
-    "image": "https://i.pinimg.com/1200x/44/2f/2a/442f2af5108e71d59cfbfc9d177f2879.jpg",
-    "type": "Game"
+    "image": "https://i.pinimg.com/1200x/42/f0/35/42f0353eace724c5a05d75ead0e3eba7.jpg",
+    "type": "Story / Lore",
+    "description": "มหานครศักดิ์สิทธิ์"
   }
 ]
