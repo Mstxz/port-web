@@ -1,7 +1,19 @@
 <script setup>
-    import { go } from '@/utils/navigation';
-    import { HugeiconsIcon } from '@hugeicons/vue';
-    import * as icons from '@hugeicons/core-free-icons/index'
+import { ref } from "vue"
+import { go } from '@/utils/navigation'
+import { HugeiconsIcon } from '@hugeicons/vue'
+import * as icons from '@hugeicons/core-free-icons/index'
+import NavigationHeader from './navigationheader.vue'
+
+const showNav = ref(false)
+
+function openNav(){
+  showNav.value = true
+}
+
+function closeNav(){
+  showNav.value = false
+}
 </script>
 
 <template>
@@ -13,6 +25,8 @@
             <button @click="go('/experience')">Experience</button>
             <button @click="go('/cert')">Certification</button>
         </nav>
-        <button class="block sm:block md:hidden lg:hidden"><HugeiconsIcon :icon="icons.Menu01Icon" :size="36"/></button>
+        <button class="block sm:block md:hidden lg:hidden"><HugeiconsIcon :icon="icons.Menu01Icon" :size="36" @click="showNav = !showNav"/></button>
     </header>
+
+    <NavigationHeader v-if="showNav" @close="closeNav"/>
 </template>

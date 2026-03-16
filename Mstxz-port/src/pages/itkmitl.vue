@@ -18,24 +18,34 @@ import semesterData from '@/data/semester.json'
           <li>Program: Information Techonlogy (IT)</li>
           <li>Curriculum: หลักสูตรปรับปรุง 2565</li>
           <li>Track: Multimedia</li>
+          <li>Cooperative Education: No</li>
         </ul>
       </Contentcontainer>
 
       <Contentcontainer variant="variant-border-2">
         <h1 class="text-2xl font-header">Important Tools</h1>
+        <h2 class="font-semibold text-xl">For Everyone</h2>
         <ul class="list-disc ml-4">
           <li>VSCode - <a target="_blank" href="https://code.visualstudio.com/" class="text-blue-400">Link</a></li>
           <li>OpenVPN - <a target="_blank" href="https://openvpn.net/" class="text-blue-400">Link</a></li>
           <li>Github - <a target="_blank" href="https://github.com/" class="text-blue-400">Link</a></li>
+        </ul>
+        <h2 class="text-xl font-semibold">For Multimedia Track</h2>
+        <ul class="list-disc ml-4">
+          <li>Adobe Color Wheel - <a target="_blank" href="https://color.adobe.com/create/color-wheel" class="text-blue-400">Link</a></li>
+          <li>AmbientCG - <a target="_blank" href="https://ambientcg.com/" class="text-blue-400">Link</a></li>
         </ul>
       </Contentcontainer>
       </section>
 
       <Contentcontainer variant="variant-border-2">
         <h1 class="text-2xl font-header">Mutimedia Track Review</h1>
-        <h2 class="text-xl font-bold">About This Track</h2>
         <a target="_blank" href="https://multimedia.it.kmitl.ac.th/#/" class="text-blue-400">Website</a>
-        <p>แขนง Multimedia เป็นแขนงที่สำหรับคนที่สนใจในสามเรื่อง ได้แก่ UX/UI Design และ Game Development ซึ่งก็เป็นแขนงที่บอกได้เลยว่า ถ้าไม่มีแพชชั่นในสายงานนี้จริง + ถ้าเป็นคนที่ชอบแต่คำสวยหรูไม่ยอมรับความจริง ยังไงก็เรียนแขนงนี้ไม่รอด เพราะว่า</p>
+        <h2 class="text-xl font-bold">Why I Choose This Track???</h2>
+        <p>ส่วนตัวเป็นคนที่ชอบการทำงานที่เกี่ยวกับความคิดสร้างสรรค์ การทำระบบที่ไม่ใช่วิธีที่ตายตัวและซับซ้อนมาก และชอบทำอะไรที่เป็น Narrative อยู่แล้ว และก็เข้าวงการนี้มาตั้งแต่ ม.4 จากการทำ Blender 3D และเคยเข้าวงการทำเกมมาก่อนระดับนึง และรู้สึกว่านี่แหละใช่ทางของเราแน่นอน จึงมั่นใจว่าเราจะเข้าแขนงนี้ และเดินทางสายนี้ต่อไป</p>
+        <h2 class="text-xl font-bold">Is it Worth it???</h2>
+        <p>ส่วนตัวถือว่าคุ้มค่าสุดๆ ที่ได้เข้ามาเรียนแขนงนี้ เพราะว่าอาจารย์ที่สอนนั้นเขามีประสบการณ์จริง เข้าใจโลกจริง ตามเทรนด์โลกทันกันตลอด และยังเป็น Commentator ที่ดีด้วย ซึ่งการ Comment แต่บะทีถึงแม้ว่าจะเจ็บจี๊ดหรือหนักหนาสาหัสขนาดไหน แต่มันก็คือ Comment ที่รู้สึกว่ามันคือความจริง และไม่ใช่สักแต่จะติติง</p>
+
       </Contentcontainer>
 
       <Contentcontainer variant="variant-border-2">

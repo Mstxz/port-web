@@ -3,14 +3,36 @@
     "id": "project01",
     "name": "Moonfall",
     "image": "https://i.pinimg.com/736x/b4/d6/12/b4d6129d786bc3d461bc87b8b3f37d73.jpg",
-    "type": "Game",
-    "description": "เกม RPG Hack n Slash เกี่ยวกับ"
+    "type": "game"
   },
   {
     "id": "project02",
-    "name": "Aetherlyn",
-    "image": "https://i.pinimg.com/1200x/42/f0/35/42f0353eace724c5a05d75ead0e3eba7.jpg",
-    "type": "Story / Lore",
-    "description": "มหานครศักดิ์สิทธิ์"
+    "name": "Aetherlyn - The Origin",
+    "image": "https://i.pinimg.com/736x/94/a0/57/94a0578fd3562c194abc6553331fbdf7.jpg",
+    "type": "story"
+  },
+  {
+    "id": "project03",
+    "name": "Fishermancer",
+    "image": "https://i.pinimg.com/1200x/84/2e/3e/842e3e270064ee62d464cb76832a8a7f.jpg",
+    "type": "game"
+  },
+  {
+    "id": "project04",
+    "name": "Cropetalia",
+    "image": "https://i.pinimg.com/736x/30/d3/32/30d332207d17b687df9e0576287c9b1e.jpg",
+    "type": "game"
+  },
+  {
+    "id": "project05",
+    "name": "T.I.M.E.R.",
+    "image": "https://i.pinimg.com/736x/98/e6/16/98e616ebdd5f0c0fde2bacda3b774695.jpg",
+    "type": "story"
+  },
+  {
+    "id": "project06",
+    "name": "Awakened",
+    "image": "https://i.pinimg.com/736x/2d/ad/f1/2dadf1c33196f189151d3a887ccef42c.jpg",
+    "type": "music"
   }
 ]

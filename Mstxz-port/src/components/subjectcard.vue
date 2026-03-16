@@ -22,6 +22,13 @@ import Contentcontainer from '@/assets/contentcontainer.vue';
 
     <hr>
 
+    <div>
+        <h1>Professor</h1>
+        <ul class="ml-4">
+            <li v-for="prof in subject.professor" class="list-disc">{{ prof }}</li>
+        </ul>
+    </div>
+
     <div class="p-4" v-html="subject.description"></div>
 
     <div v-if="subject.source?.length">

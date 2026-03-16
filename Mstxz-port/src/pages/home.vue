@@ -5,17 +5,30 @@ import * as icons from '@hugeicons/core-free-icons/index'
 
 import Contentcontainer from '@/assets/contentcontainer.vue';
 import socialmedia from '@/assets/socialmedia.vue'
-import inputtext from '@/assets/inputtext.vue';
 import Buttons from '@/assets/buttons.vue';
 
 import projectbanner from '@/components/projectbanner.vue';
 import toolbadge from '@/components/toolbadge.vue';
+import overlay from '@/components/projectoverlay.vue';
 
 import projects from '@/data/projects.json';
 import tools from '@/data/tools.json';
 import socialData from '@/data/socialmedia.json';
 
 import { ref, onMounted, nextTick } from "vue"
+import { go } from '@/utils/navigation';
+
+const showOverlay = ref(false)
+const selectedProject = ref(null)
+
+function openOverlay(project) {
+  selectedProject.value = project
+  showOverlay.value = true
+}
+
+function closeOverlay() {
+  showOverlay.value = false
+}
 
 const socialarr = ref([])
 
@@ -44,11 +57,11 @@ onMounted(async () => {
 <template>
 <main class="[&>section]:p-10">
   <section class="flex flex-col justify-center items-center space-y-4 h-screen">
-    <h1 class="font-header text-6xl header-animate">Mstxz</h1>
-    <h2 class="quote-animate" style="opacity: 0;">Beyond Imagination, Through Reality.</h2>
+    <h1 class="font-header text-6xl header-animate text-center">Mstxz</h1>
+    <h2 class="quote-animate text-center" style="opacity: 0;">Beyond Imagination, Through Reality.</h2>
 
     <!-- Hero Section -->
-    <nav class="flex justify-center gap-4">
+    <nav class="flex justify-center gap-4 flex-wrap">
       <socialmedia ref="socialarr" v-for="social in socialData" :key="social.name" :links="social.link" style="opacity: 0;">
         <component :is="brandicon[social.icon]" />
       </socialmedia>
@@ -64,16 +77,15 @@ onMounted(async () => {
                   <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.GameController03Icon"/> Games</Buttons>
                   <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.WebDesign02Icon"/> Web / UI</Buttons>
                   <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.Vynil03Icon"/>Music</Buttons>
+                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.Scroll01Icon"/>Story / Lore</Buttons>
                 </div>
-                <div class="flex gap-2">
-                  <inputtext></inputtext>
-                  <Buttons shape="square" transition="false"><HugeiconsIcon :icon="icons.Search02Icon"/></Buttons>
-                  <Buttons @click="go('/project')" variant="solid">View More</Buttons>
-                </div>
+                <Buttons @click="go('/project')" variant="solid">View More</Buttons>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <projectbanner v-for="project in projects" :key="project.id" :projectname="project.name" :thumbnail="project.image" :projecttype="project.type"/>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <projectbanner v-for="project in projects" :key="project.id" :projectname="project.name" :thumbnail="project.image" :projecttype="project.type" @view="openOverlay(project)"/>
             </div>
+
+            <overlay v-if="showOverlay" :project="selectedProject" @close="showOverlay=false" variant="variant-border-2"/>
         </Contentcontainer>
    </section>
 
