@@ -72,12 +72,12 @@ onMounted(async () => {
    <section class="h-auto">
         <h1>Projects</h1>
         <Contentcontainer class="space-y-4">
-            <div class="flex gap-4 justify-between">
+            <div class="flex gap-4 justify-between flex-wrap">
                 <div class="flex gap-2">
-                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.GameController03Icon"/> Games</Buttons>
-                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.WebDesign02Icon"/> Web / UI</Buttons>
-                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.Vynil03Icon"/>Music</Buttons>
-                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.Scroll01Icon"/>Story / Lore</Buttons>
+                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.GameController03Icon"/> <span class="hidden sm:hidden md:hidden lg:block">Games</span></Buttons>
+                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.WebDesign02Icon"/> <span class="hidden sm:hidden md:hidden lg:block">Web / UI</span></Buttons>
+                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.Vynil03Icon"/><span class="hidden sm:hidden md:hidden lg:block">Music</span></Buttons>
+                  <Buttons class="flex gap-2"><HugeiconsIcon :icon="icons.Scroll01Icon"/><span class="hidden sm:hidden md:hidden lg:block">Story / Lore</span></Buttons>
                 </div>
                 <Buttons @click="go('/project')" variant="solid">View More</Buttons>
             </div>
